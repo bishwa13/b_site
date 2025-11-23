@@ -3,54 +3,191 @@ layout: default
 title: Home
 ---
 
-<header class="bs-hero">
-  <div class="bs-container">
-    <h1>Welcome to {{ site.title }}</h1>
-    <p class="bs-lead">Personal site featuring publications, talks, teaching, portfolio, and blog posts.</p>
-    <a class="bs-btn bs-btn-primary" href="{{ '/year-archive/' | relative_url }}">View Blog Posts</a>
-  </div>
-</header>
+<main id="main-content">
+  <!-- Hero Section -->
+  <section class="jk-hero" data-animate="jk-fade-in-up">
+    <div class="jk-container">
+      <div class="jk-hero-content">
+        <h1>Welcome to {{ site.title }}</h1>
+        <p class="jk-lead">
+          A modern, professional platform featuring publications, teaching materials, 
+          portfolio projects, and insightful blog posts on education and sustainable development.
+        </p>
+        <div class="jk-hero-actions">
+          <a href="{{ '/year-archive/' | relative_url }}" class="jk-btn jk-btn-primary jk-btn-lg">
+            Explore Blog Posts
+          </a>
+          <a href="{{ '/publications/' | relative_url }}" class="jk-btn jk-btn-outline jk-btn-lg">
+            View Publications
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="bs-container bs-content-section">
-  <h2>Recent Posts</h2>
-  <ul class="bs-posts-list">
-    {% for post in site.posts limit:5 %}
-      <li class="bs-post-item">
-        <a href="{{ post.url | relative_url }}" class="bs-post-link">{{ post.title }}</a>
-        <span class="bs-post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-      </li>
-    {% else %}
-      <li>No posts yet. Create your first post in <code>_posts/</code> with the format <code>YYYY-MM-DD-title.md</code></li>
-    {% endfor %}
-  </ul>
-  
-  {% if site.posts.size > 5 %}
-    <a href="{{ '/year-archive/' | relative_url }}" class="bs-view-all">View all posts →</a>
-  {% endif %}
-</section>
+  <!-- Recent Posts Section -->
+  <section class="jk-section">
+    <div class="jk-container">
+      <div class="jk-flex jk-justify-between jk-items-center jk-mb-xl">
+        <h2 class="jk-mb-0">Recent Posts</h2>
+        {% if site.posts.size > 5 %}
+          <a href="{{ '/year-archive/' | relative_url }}" class="jk-link jk-fw-semibold">
+            View all posts →
+          </a>
+        {% endif %}
+      </div>
 
-<section class="bs-container bs-content-section features">
-  <h2>What You'll Find Here</h2>
-  <div class="bs-features-grid">
-    <div class="bs-feature-card">
-      <h3>Study Abroad</h3>
-      <p>Services, application guides, scholarships, and package information for international education.</p>
-      <a href="{{ '/study-abroad/' | relative_url }}">Learn more →</a>
+      <ul class="jk-post-list">
+        {% for post in site.posts limit:5 %}
+          <li class="jk-post-item" data-animate="jk-fade-in-up">
+            <div>
+              <a href="{{ post.url | relative_url }}" class="jk-post-link">
+                {{ post.title }}
+              </a>
+              {% if post.categories %}
+                <div class="jk-post-meta">
+                  {% for category in post.categories limit:2 %}
+                    <span class="jk-badge jk-badge-primary">{{ category }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+            <time class="jk-post-date" datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%B %d, %Y" }}
+            </time>
+          </li>
+        {% else %}
+          <li class="jk-text-muted jk-text-center jk-py-xl">
+            <p>No posts yet. Create your first post in <code>_posts/</code> with the format <code>YYYY-MM-DD-title.md</code></p>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
-    <div class="bs-feature-card">
-      <h3>Publications</h3>
-      <p>Journal articles, conference papers, reports, policy briefs, books, and book chapters.</p>
-      <a href="{{ '/publications/' | relative_url }}">Explore →</a>
+  </section>
+
+  <!-- Features Grid Section -->
+  <section class="jk-section jk-bg-gray-100">
+    <div class="jk-container">
+      <div class="jk-text-center jk-mb-2xl">
+        <h2>What You'll Find Here</h2>
+        <p class="jk-lead jk-mx-auto" style="max-width: 700px;">
+          Explore a comprehensive collection of academic resources, professional services, 
+          and creative work across multiple disciplines.
+        </p>
+      </div>
+
+      <div class="jk-grid jk-grid-auto-fit" style="--jk-grid-min: 280px;">
+        <!-- Study Abroad Feature -->
+        <div class="jk-feature-card" data-animate="jk-fade-in-up">
+          <div class="jk-feature-icon">
+            🎓
+          </div>
+          <h3>Study Abroad</h3>
+          <p>
+            Comprehensive guidance for international education including application support, 
+            scholarship opportunities, and customized service packages.
+          </p>
+          <a href="{{ '/study-abroad/' | relative_url }}" class="jk-link jk-fw-semibold">
+            Learn more →
+          </a>
+        </div>
+
+        <!-- Publications Feature -->
+        <div class="jk-feature-card" data-animate="jk-fade-in-up jk-stagger-1">
+          <div class="jk-feature-icon">
+            📚
+          </div>
+          <h3>Publications</h3>
+          <p>
+            Access peer-reviewed journal articles, conference papers, policy briefs, 
+            books, and book chapters across various research domains.
+          </p>
+          <a href="{{ '/publications/' | relative_url }}" class="jk-link jk-fw-semibold">
+            Explore publications →
+          </a>
+        </div>
+
+        <!-- Talks Feature -->
+        <div class="jk-feature-card" data-animate="jk-fade-in-up jk-stagger-2">
+          <div class="jk-feature-icon">
+            🎤
+          </div>
+          <h3>Talks & Media</h3>
+          <p>
+            Discover workshops, guest lectures, podcast appearances, and media contributions 
+            on education, research, and sustainable development.
+          </p>
+          <a href="{{ '/talks/' | relative_url }}" class="jk-link jk-fw-semibold">
+            View talks →
+          </a>
+        </div>
+
+        <!-- Teaching Feature -->
+        <div class="jk-feature-card" data-animate="jk-fade-in-up jk-stagger-3">
+          <div class="jk-feature-icon">
+            👨‍🏫
+          </div>
+          <h3>Teaching</h3>
+          <p>
+            Browse course materials, syllabi, and supervision opportunities for 
+            Masters and PhD students in various academic disciplines.
+          </p>
+          <a href="{{ '/teaching/' | relative_url }}" class="jk-link jk-fw-semibold">
+            View courses →
+          </a>
+        </div>
+
+        <!-- Portfolio Feature -->
+        <div class="jk-feature-card" data-animate="jk-fade-in-up jk-stagger-4">
+          <div class="jk-feature-icon">
+            💼
+          </div>
+          <h3>Portfolio</h3>
+          <p>
+            Explore business development initiatives, environmental solutions, 
+            consulting projects, and creative writing samples.
+          </p>
+          <a href="{{ '/portfolio/' | relative_url }}" class="jk-link jk-fw-semibold">
+            See work →
+          </a>
+        </div>
+
+        <!-- Projects Feature -->
+        <div class="jk-feature-card" data-animate="jk-fade-in-up jk-stagger-5">
+          <div class="jk-feature-icon">
+            🚀
+          </div>
+          <h3>Research Projects</h3>
+          <p>
+            Learn about active research initiatives, completed projects, and 
+            funded research programs making an impact in the field.
+          </p>
+          <a href="{{ '/projects/' | relative_url }}" class="jk-link jk-fw-semibold">
+            View projects →
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="bs-feature-card">
-      <h3>Teaching</h3>
-      <p>Course materials, syllabi, and supervision opportunities for Masters and PhD students.</p>
-      <a href="{{ '/teaching/' | relative_url }}">View courses →</a>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="jk-section">
+    <div class="jk-container">
+      <div class="jk-card jk-text-center" style="max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, rgba(11, 108, 240, 0.05) 0%, rgba(59, 130, 246, 0.08) 100%); border: 2px solid var(--jk-primary);">
+        <h2>Ready to Get Started?</h2>
+        <p class="jk-lead">
+          Whether you're looking for academic guidance, research collaboration, 
+          or professional consulting, I'm here to help you achieve your goals.
+        </p>
+        <div class="jk-flex jk-justify-center jk-gap-md jk-flex-wrap">
+          <a href="{{ '/cv/' | relative_url }}" class="jk-btn jk-btn-primary">
+            View CV
+          </a>
+          <a href="{{ '/year-archive/' | relative_url }}" class="jk-btn jk-btn-secondary">
+            Read Blog
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="bs-feature-card">
-      <h3>Portfolio</h3>
-      <p>Business development, environmental solutions, consulting projects, and creative writing.</p>
-      <a href="{{ '/portfolio/' | relative_url }}">See work →</a>
-    </div>
-  </div>
-</section>
+  </section>
+</main>

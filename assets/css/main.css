@@ -1,240 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+/* assets/css/main.css - Enhanced Main Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Import modular stylesheets */
+@import url('base.css');
+@import url('typography.css');
+@import url('layout.css');
+@import url('navigation.css');
 @import url('header.css');
-@import url('nav.css');
+@import url('components.css');
 @import url('footer.css');
+@import url('responsive.css');
+@import url('animations.css');
 
-/* Reset & Base Styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  color: #111827;
-  background: #ffffff;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Container */
-.bs-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-/* Navigation moved to assets/css/nav.css */
-
-/* Header styles moved to assets/css/header.css */
-
-/* Button styles moved to assets/css/header.css */
-
-/* Content Sections */
-.bs-content-section {
-  padding: 3rem 0;
-}
-
-.content-section h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #111827;
-}
-
-/* Posts List */
-.bs-posts-list {
-  list-style: none;
-}
-.bs-post-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-  border-bottom: 1px solid #f3f4f6;
-}
-.bs-post-link {
-  color: #111827;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s;
-}
-.bs-post-link:hover {
-  color: #0b6cf0;
-}
-.bs-post-date {
-  color: #6b7280;
-  font-size: 0.875rem;
-}
-.bs-view-all {
-  display: inline-block;
-  margin-top: 1.5rem;
-  color: #0b6cf0;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.2s;
-}
-.bs-view-all:hover {
-  gap: 0.5rem;
-  transform: translateX(4px);
-}
-
-/* Features Grid */
-.bs-features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.bs-feature-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 2rem;
-  transition: all 0.3s;
-}
-.bs-feature-card:hover {
-  border-color: #0b6cf0;
-  box-shadow: 0 8px 24px rgba(11, 108, 240, 0.12);
-  transform: translateY(-4px);
-}
-
-.bs-feature-card h3 {
-  color: #111827;
-  margin-bottom: 0.75rem;
-  font-size: 1.25rem;
-}
-.bs-feature-card p {
-  color: #6b7280;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-.bs-feature-card a {
-  color: #0b6cf0;
-  text-decoration: none;
-  font-weight: 600;
-  transition: gap 0.2s;
-}
-.bs-feature-card a:hover {
-  gap: 0.5rem;
-}
-
-/* Post Content */
-.bs-post-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
-}
-.bs-post-header {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #e5e7eb;
-}
-.bs-post-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #111827;
-}
-.bs-post-meta {
-  color: #6b7280;
-  font-size: 0.875rem;
-}
-
-.separator {
-  margin: 0 0.5rem;
-}
-
-.bs-categories a {
-  color: #0b6cf0;
-  text-decoration: none;
-}
-.bs-categories a:hover {
-  text-decoration: underline;
-}
-.bs-post-body {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: #374151;
-}
-.bs-post-body h2 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #111827;
-}
-.bs-post-body h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  color: #111827;
-}
-.bs-post-body p {
-  margin-bottom: 1.25rem;
-}
-.bs-post-body code {
-  background: #f3f4f6;
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  font-size: 0.875em;
-  color: #0b6cf0;
-}
-.bs-post-body pre {
-  background: #1f2937;
-  color: #f3f4f6;
-  padding: 1.5rem;
-  border-radius: 8px;
-  overflow-x: auto;
-  margin-bottom: 1.5rem;
-}
-.bs-post-body pre code {
-  background: none;
-  color: inherit;
-  padding: 0;
-}
-
-/* Page Content */
-.bs-page-content {
-  padding: 3rem 2rem;
-}
-.bs-page-header {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #e5e7eb;
-}
-.bs-page-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #111827;
-}
-.bs-page-description {
-  font-size: 1.25rem;
-  color: #6b7280;
-}
-.bs-page-body {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: #374151;
-}
-
-/* Footer moved to assets/css/footer.css */
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .bs-container { padding: 0 1rem; }
-  .bs-nav-container { padding: 1rem; }
-
-  /* Mobile nav responsive rules moved to assets/css/nav.css */
-
-  .bs-hero h1 { font-size: 2rem; }
-  .bs-lead { font-size: 1.125rem; }
-
-  .bs-features-grid { grid-template-columns: 1fr; }
-
-  .bs-post-item { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
-
-  .bs-post-header h1 { font-size: 2rem; }
-
-  .bs-post-body { font-size: 1rem; }
+/* Root Variables for Easy Theme Management */
+:root {
+  /* Primary Colors */
+  --jk-primary: #0b6cf0;
+  --jk-primary-hover: #0951c7;
+  --jk-primary-light: rgba(11, 108, 240, 0.1);
+  
+  /* Neutral Colors */
+  --jk-dark: #111827;
+  --jk-gray-900: #1f2937;
+  --jk-gray-800: #374151;
+  --jk-gray-700: #4b5563;
+  --jk-gray-600: #6b7280;
+  --jk-gray-500: #9ca3af;
+  --jk-gray-400: #d1d5db;
+  --jk-gray-300: #e5e7eb;
+  --jk-gray-200: #f3f4f6;
+  --jk-gray-100: #f9fafb;
+  --jk-white: #ffffff;
+  
+  /* Semantic Colors */
+  --jk-success: #10b981;
+  --jk-warning: #f59e0b;
+  --jk-error: #ef4444;
+  --jk-info: #3b82f6;
+  
+  /* Spacing */
+  --jk-spacing-xs: 0.25rem;
+  --jk-spacing-sm: 0.5rem;
+  --jk-spacing-md: 1rem;
+  --jk-spacing-lg: 1.5rem;
+  --jk-spacing-xl: 2rem;
+  --jk-spacing-2xl: 3rem;
+  --jk-spacing-3xl: 4rem;
+  
+  /* Border Radius */
+  --jk-radius-sm: 6px;
+  --jk-radius-md: 8px;
+  --jk-radius-lg: 12px;
+  --jk-radius-xl: 16px;
+  
+  /* Shadows */
+  --jk-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --jk-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --jk-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --jk-shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.15);
+  
+  /* Transitions */
+  --jk-transition-fast: 0.15s ease;
+  --jk-transition-base: 0.2s ease;
+  --jk-transition-slow: 0.3s ease;
+  
+  /* Z-index */
+  --jk-z-dropdown: 100;
+  --jk-z-sticky: 200;
+  --jk-z-fixed: 300;
+  --jk-z-modal: 400;
+  --jk-z-popover: 500;
+  --jk-z-tooltip: 600;
 }
