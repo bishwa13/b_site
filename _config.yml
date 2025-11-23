@@ -1,9 +1,7 @@
-sass:
-  sass_dir: assets/css
-  style: compressed
-
 title: "Bishwa's Site"
 description: "Personal site built with Jekyll and GitHub Pages"
+url: "" # Add your site URL here
+baseurl: "" # Add your baseurl if needed
 
 markdown: kramdown
 highlighter: rouge
@@ -12,31 +10,33 @@ kramdown:
   input: GFM
   syntax_highlighter_opts:
     css_class: "highlight"
-    span:
-      line_numbers: false
-    block:
-      line_numbers: false
-      start_line: 1
   hard_wrap: false
   auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
 
-timezone: "Asia/Kathmandu"
+timezone: "UTC"
 encoding: UTF-8
 
 plugins:
-  - jekyll-sass-converter
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-toc
 
-toc:
-  min_level: 1
-  max_level: 4
-  list_class: toc__list
-  sublist_class: toc__sublist
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

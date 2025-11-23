@@ -1,0 +1,16 @@
+/* Footer specific styles */
+.bs-site-footer { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.bs-site-footer a { color: #0b6cf0; text-decoration: none; }
+.bs-site-footer a:hover { text-decoration: underline; }
+
+/* Footer rules moved from main.css */
+.bs-site-footer {
+	background: #f9fafb;
+	border-top: 1px solid #e5e7eb;
+	padding: 2rem 0;
+	margin-top: 4rem;
+	text-align: center;
+}
+
+.bs-site-footer p { color: #6b7280; font-size: 0.875rem; }
+

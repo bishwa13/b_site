@@ -3,24 +3,54 @@ layout: default
 title: Home
 ---
 
-<header class="hero">
-	<div class="container">
-		<h1>{{ site.title | default: "My Jekyll Site" }}</h1>
-		<p class="lead">A simple Jekyll + GitHub Pages starter — write posts in Markdown.</p>
-		<p><a class="btn" href="{{ '/year-archive/' | relative_url }}">View Blog</a></p>
-	</div>
+<header class="bs-hero">
+  <div class="bs-container">
+    <h1>Welcome to {{ site.title }}</h1>
+    <p class="bs-lead">Personal site featuring publications, talks, teaching, portfolio, and blog posts.</p>
+    <a class="bs-btn bs-btn-primary" href="{{ '/year-archive/' | relative_url }}">View Blog Posts</a>
+  </div>
 </header>
 
-<section class="container">
-	<h2>Recent Posts</h2>
-	<ul class="posts">
-		{% for post in site.posts limit:5 %}
-			<li>
-				<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-				<small class="post-date">{{ post.date | date: "%b %d, %Y" }}</small>
-			</li>
-		{% else %}
-			<li>No posts yet — create one in <code>_posts/</code>.</li>
-		{% endfor %}
-	</ul>
+<section class="bs-container bs-content-section">
+  <h2>Recent Posts</h2>
+  <ul class="bs-posts-list">
+    {% for post in site.posts limit:5 %}
+      <li class="bs-post-item">
+        <a href="{{ post.url | relative_url }}" class="bs-post-link">{{ post.title }}</a>
+        <span class="bs-post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </li>
+    {% else %}
+      <li>No posts yet. Create your first post in <code>_posts/</code> with the format <code>YYYY-MM-DD-title.md</code></li>
+    {% endfor %}
+  </ul>
+  
+  {% if site.posts.size > 5 %}
+    <a href="{{ '/year-archive/' | relative_url }}" class="bs-view-all">View all posts →</a>
+  {% endif %}
+</section>
+
+<section class="bs-container bs-content-section features">
+  <h2>What You'll Find Here</h2>
+  <div class="bs-features-grid">
+    <div class="bs-feature-card">
+      <h3>Study Abroad</h3>
+      <p>Services, application guides, scholarships, and package information for international education.</p>
+      <a href="{{ '/study-abroad/' | relative_url }}">Learn more →</a>
+    </div>
+    <div class="bs-feature-card">
+      <h3>Publications</h3>
+      <p>Journal articles, conference papers, reports, policy briefs, books, and book chapters.</p>
+      <a href="{{ '/publications/' | relative_url }}">Explore →</a>
+    </div>
+    <div class="bs-feature-card">
+      <h3>Teaching</h3>
+      <p>Course materials, syllabi, and supervision opportunities for Masters and PhD students.</p>
+      <a href="{{ '/teaching/' | relative_url }}">View courses →</a>
+    </div>
+    <div class="bs-feature-card">
+      <h3>Portfolio</h3>
+      <p>Business development, environmental solutions, consulting projects, and creative writing.</p>
+      <a href="{{ '/portfolio/' | relative_url }}">See work →</a>
+    </div>
+  </div>
 </section>
