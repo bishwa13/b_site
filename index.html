@@ -1,0 +1,26 @@
+---
+layout: default
+title: Home
+---
+
+<header class="hero">
+	<div class="container">
+		<h1>{{ site.title | default: "My Jekyll Site" }}</h1>
+		<p class="lead">A simple Jekyll + GitHub Pages starter — write posts in Markdown.</p>
+		<p><a class="btn" href="{{ '/year-archive/' | relative_url }}">View Blog</a></p>
+	</div>
+</header>
+
+<section class="container">
+	<h2>Recent Posts</h2>
+	<ul class="posts">
+		{% for post in site.posts limit:5 %}
+			<li>
+				<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+				<small class="post-date">{{ post.date | date: "%b %d, %Y" }}</small>
+			</li>
+		{% else %}
+			<li>No posts yet — create one in <code>_posts/</code>.</li>
+		{% endfor %}
+	</ul>
+</section>

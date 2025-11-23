@@ -1,0 +1,79 @@
+main:
+  - title: "Study Abroad"
+    url: /study-abroad/
+    children:
+      - title: "Services"
+        url: /study-abroad/services/
+      - title: "Application Guides"
+        url: /study-abroad/guides/
+      - title: "Scholarships"
+        url: /study-abroad/scholarships/
+      - title: "Packages & Fees"
+        url: /study-abroad/packages/
+
+  - title: "Publications"
+    url: /publications/
+    children:
+      - title: "Journal Articles"
+        url: /publications/journals/
+      - title: "Conference Papers"
+        url: /publications/conferences/
+      - title: "Reports & Policy Briefs"
+        url: /publications/reports/
+      - title: "Books & Chapters"
+        url: /publications/books/
+
+  - title: "Talks"
+    url: /talks/
+    children:
+      - title: "Workshops"
+        url: /talks/workshops/
+      - title: "Guest Lectures"
+        url: /talks/lectures/
+      - title: "Media & Podcasts"
+        url: /talks/media/
+
+  - title: "Teaching"
+    url: /teaching/
+    children:
+      - title: "Courses"
+        url: /teaching/courses/
+      - title: "Syllabi"
+        url: /teaching/syllabi/
+      - title: "Supervision (Masters/PhD)"
+        url: /teaching/supervision/
+
+  - title: "Portfolio"
+    url: /portfolio/
+    children:
+      - title: "Business Development"
+        url: /portfolio/business/
+      - title: "Environment Solutions"
+        url: /portfolio/environment/
+      - title: "Consulting Projects"
+        url: /portfolio/consulting/
+      - title: "Creative Writing"
+        url: /portfolio/writing/
+
+  - title: "Blog Posts"
+    url: /year-archive/
+    children:
+      - title: "Career & Coaching"
+        url: /blog/career/
+      - title: "Education & Research"
+        url: /blog/research/
+      - title: "Sustainable Development"
+        url: /blog/sustainability/
+
+  - title: "CV"
+    url: /cv/
+
+  - title: "Projects"
+    url: /projects/
+    children:
+      - title: "Active Projects"
+        url: /projects/active/
+      - title: "Completed Projects"
+        url: /projects/completed/
+      - title: "Funded Research"
+        url: /projects/funded/
