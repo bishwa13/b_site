@@ -26,7 +26,9 @@ function initNavigation() {
 
   // State management
   let isMenuOpen = false;
-  let isMobile = window.innerWidth <= 768;
+  // Use a slightly larger mobile threshold so the menu collapses earlier
+  // and matches the intermediate CSS breakpoints (900px).
+  let isMobile = window.innerWidth <= 900;
 
   /**
    * Toggle mobile menu
@@ -147,7 +149,7 @@ function initNavigation() {
    */
   function handleResize() {
     const wasMobile = isMobile;
-    isMobile = window.innerWidth <= 768;
+    isMobile = window.innerWidth <= 900;
 
     if (wasMobile !== isMobile) {
       closeMenu();

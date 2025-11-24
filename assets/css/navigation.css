@@ -4,7 +4,7 @@
 .jk-navbar {
   background: var(--jk-white);
   border-bottom: 1px solid var(--jk-gray-300);
-  position: sticky;
+  position:relative;
   top: 0;
   z-index: var(--jk-z-sticky);
   box-shadow: var(--jk-shadow-sm);
@@ -81,7 +81,7 @@
 /* Navigation Menu */
 .jk-navbar-menu {
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: var(--jk-spacing-xs);
   list-style: none;
 }
@@ -211,6 +211,37 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--jk-gray-500);
+}
+
+/* Intermediate responsive tweaks to prevent overflow between desktop and mobile */
+@media (max-width: 1100px) {
+  .jk-navbar-container {
+    padding: var(--jk-spacing-sm) var(--jk-spacing-lg);
+  }
+
+  .jk-navbar-menu {
+    gap: calc(var(--jk-spacing-xs) * 0.5);
+  }
+
+  .jk-navbar-link {
+    padding: calc(var(--jk-spacing-xs) + 2px) var(--jk-spacing-sm);
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .jk-navbar-container {
+    padding: var(--jk-spacing-sm) var(--jk-spacing-md);
+  }
+
+  .jk-navbar-link {
+    padding: var(--jk-spacing-xs) var(--jk-spacing-sm);
+    font-size: 0.875rem;
+  }
+
+  .jk-navbar-brand {
+    font-size: 1.25rem;
+  }
 }
 
 /* Mobile Styles */
