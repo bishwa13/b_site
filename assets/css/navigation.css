@@ -132,7 +132,8 @@
 .jk-dropdown-menu {
   position: absolute;
   top: calc(100% + 8px);
-  left: 0;
+  left: auto;
+  right: 0;
   background: var(--jk-white);
   border: 1px solid var(--jk-gray-300);
   border-radius: var(--jk-radius-md);
@@ -145,6 +146,7 @@
   transform: translateY(-10px);
   transition: all var(--jk-transition-base);
   z-index: var(--jk-z-dropdown);
+  overflow-x: auto;
 }
 
 .jk-navbar-item:hover > .jk-dropdown-menu,
@@ -283,6 +285,10 @@
 
   .jk-dropdown-menu {
     position: static;
+    left: 0;
+    min-width: 100%;
+    max-width: none;
+    overflow-x: auto;
     opacity: 1;
     visibility: visible;
     transform: none;
