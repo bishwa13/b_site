@@ -1,5 +1,5 @@
-title: "Bishwa's Site"
-description: "Personal site built with Jekyll and GitHub Pages"
+title: "ImBishwa"
+description: "This is my official personal site, where I put my thoughts, learning and whatever I want. Its not me, its my progress."
 url: "" # Add your site URL here
 baseurl: "" # Add your baseurl if needed
 
@@ -7,11 +7,18 @@ markdown: kramdown
 highlighter: rouge
 
 kramdown:
+  math_engine: mathjax
   input: GFM
   syntax_highlighter_opts:
     css_class: "highlight"
   hard_wrap: false
   auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_level: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
 
 timezone: "UTC"
 encoding: UTF-8
@@ -24,19 +31,157 @@ plugins:
 paginate: 10
 paginate_path: "/blog/page:num/"
 
+
+
+
+
+
+
+publication_category:
+  books:
+    title: 'Books'
+  manuscripts:
+    title: 'Journal Articles'    
+  conferences:
+    title: 'Conference Papers'
+
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+  - _posts
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - CHANGELOG
+  - Capfile
+  - config
+  - Dockerfile
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - Rakefile
+  - README
+  - tmp
+  - vendor
+keep_files:
+  - .git
+  - .svn
+
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+
+
+# These settings control the types of collections used by the template
+
 collections:
-  pages:
+  teaching:
     output: true
-    permalink: /:path/
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
+  study-abroad:
+    output: true
+    permalink: /study-abroad/:path/
+
+
+# These settings control how pages and collections are included in the site
 
 defaults:
+  # _posts
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
   - scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
-      layout: "page"
+      layout: single
+      author_profile: true
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _talks
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
+
+  # _study-abroad
+  - scope:
+      path: ""
+      type: study-abroad
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+
+
+
+
