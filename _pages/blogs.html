@@ -1,0 +1,150 @@
+---
+layout: page
+title: "Insights & Articles"
+permalink: /blog/
+description: In-depth articles and insights from Bishwa Prakash Puri on climate-hydrology interactions, GIS applications in environmental management, and strategic international education advisory.
+---
+
+<main id="main-content" class="blog-index-page">
+
+    <header class="blog-hero">
+        <div class="jk-container">
+            <h1 class="blog-hero-title">E-Journal of Environmental & Policy Insights</h1>
+            <p class="blog-hero-intro">
+                Translating complex scientific research and consulting experience into actionable knowledge. Explore in-depth analysis on climate adaptation, geospatial trends, and international education pathways.
+            </p>
+            <div class="blog-search-box">
+                <input type="search" id="blog-search" placeholder="Search articles by keyword or topic (e.g., 'SWAT model' or 'EIA process')" aria-label="Search blog articles">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="blog-categories jk-section">
+        <div class="jk-container">
+            <h2 class="section-heading-small">Explore by Focus Area</h2>
+            <nav class="category-nav">
+                <ul>
+                    <li><a href="{{ '/categories/hydrology/' | relative_url }}" class="cat-link cat-hydrology">💧 Hydrology & Modeling (12)</a></li>
+                    <li><a href="{{ '/categories/gis-rs/' | relative_url }}" class="cat-link cat-gis">🌍 GIS & Remote Sensing (8)</a></li>
+                    <li><a href="{{ '/categories/consulting/' | relative_url }}" class="cat-link cat-consulting">✅ Consulting & Policy (5)</a></li>
+                    <li><a href="{{ '/categories/education/' | relative_url }}" class="cat-link cat-education">🎓 Education Advisory (4)</a></li>
+                    <li><a href="{{ '/categories/nepal/' | relative_url }}" class="cat-link cat-regional">📍 Regional Focus (7)</a></li>
+                    <li><a href="{{ '/blog/' | relative_url }}" class="cat-link cat-all active">📚 View All Articles</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="blog-featured jk-section jk-bg-gray-100">
+        <div class="jk-container">
+            <h2 class="section-heading">🔥 Featured Insights</h2>
+            
+            <div class="featured-grid">
+                
+                {% assign featured_post = site.posts | where: "featured", true | sort: "date" | reverse | first %}
+                <article class="featured-card featured-card-lg">
+                    <div class="featured-image-container">
+                        <img src="{{ featured_post.featured_image }}" alt="Visualization of a hydrological model output for a river basin" class="featured-image">
+                    </div>
+                    <div class="featured-content">
+                        <span class="featured-category tag-hydrology">Hydrology & Modeling</span>
+                        <h3 class="featured-title">
+                            <a href="{{ featured_post.url | relative_url }}">The Role of SWAT Model in Assessing Future Water Scarcity in Himalayan Rivers</a>
+                        </h3>
+                        <p class="featured-excerpt">
+                            Detailed technical analysis on how climate model downscaling coupled with the Soil and Water Assessment Tool (SWAT) provides crucial foresight for water management in glacier-fed regions.
+                        </p>
+                        <div class="featured-meta">
+                            <span class="meta-date">🗓️ July 15, 2024</span>
+                            <span class="meta-read-time">🕒 8 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                {% assign secondary_post = site.posts | where: "featured", true | sort: "date" | reverse | skip: 1 | first %}
+                <article class="featured-card featured-card-sm">
+                    <span class="featured-category tag-consulting">Consulting & Policy</span>
+                    <h3 class="featured-title">
+                        <a href="{{ secondary_post.url | relative_url }}">Navigating the EIA Process for Renewable Energy Projects in Nepal: A Consultant's Guide</a>
+                    </h3>
+                    <div class="featured-meta">
+                        <span class="meta-date">🗓️ June 28, 2024</span>
+                    </div>
+                </article>
+
+                {% assign tertiary_post = site.posts | where: "featured", true | sort: "date" | reverse | skip: 2 | first %}
+                <article class="featured-card featured-card-sm">
+                    <span class="featured-category tag-education">Education Advisory</span>
+                    <h3 class="featured-title">
+                        <a href="{{ tertiary_post.url | relative_url }}">The True Cost of a US Masters Degree: Scholarships, Stipends, and Strategy</a>
+                    </h3>
+                    <div class="featured-meta">
+                        <span class="meta-date">🗓️ May 10, 2024</span>
+                    </div>
+                </article>
+
+            </div>
+            
+            <a href="{{ '/categories/all/' | relative_url }}" class="jk-btn jk-btn-outline jk-btn-center">View More Featured Work</a>
+
+        </div>
+    </section>
+
+    <section class="blog-main-list jk-section">
+        <div class="jk-container">
+            <h2 class="section-heading">Latest Articles</h2>
+
+            <div class="article-list-grid">
+                
+                {% for post in site.posts limit: 10 %}
+                <article class="article-summary-card">
+                    <div class="article-content">
+                        <span class="article-category tag-{{ post.categories | first | slugify }}">{{ post.categories | first }}</span>
+                        <h3 class="article-title">
+                            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        </h3>
+                        <p class="article-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+                        <div class="article-meta">
+                            <span class="meta-date">🗓️ {{ post.date | date: "%b %d, %Y" }}</span>
+                            <span class="meta-author">✍️ {{ site.author.name }}</span>
+                        </div>
+                    </div>
+                    {% if post.image %}
+                    <div class="article-image-container">
+                        <img src="{{ post.image }}" alt="Thumbnail for {{ post.title }}" class="article-thumbnail">
+                    </div>
+                    {% endif %}
+                </article>
+                {% endfor %}
+                <article class="article-summary-card">
+                    <div class="article-content">
+                        <span class="article-category tag-gis">GIS & Remote Sensing</span>
+                        <h3 class="article-title">Using Google Earth Engine for Rapid Flood Inundation Mapping</h3>
+                        <p class="article-excerpt">A practical tutorial on leveraging cloud computing power for disaster response using SAR data and GEE scripts...</p>
+                        <div class="article-meta">
+                            <span class="meta-date">🗓️ Apr 12, 2024</span>
+                            <span class="meta-author">✍️ Bishwa Prakash Puri</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="article-summary-card">
+                    <div class="article-content">
+                        <span class="article-category tag-regional">Regional Focus</span>
+                        <h3 class="article-title">The Long Road to Climate Resilience: Lessons from Nepal’s NAPA Implementation</h3>
+                        <p class="article-excerpt">An overview of the National Adaptation Programme of Action (NAPA) and challenges faced in local-level execution and funding gaps...</p>
+                        <div class="article-meta">
+                            <span class="meta-date">🗓️ Mar 01, 2024</span>
+                            <span class="meta-author">✍️ Bishwa Prakash Puri</span>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+            
+            <a href="{{ '/archive/' | relative_url }}" class="jk-btn jk-btn-primary jk-btn-center jk-btn-lg">View Full Article Archive →</a>
+        </div>
+    </section>
+
+</main>

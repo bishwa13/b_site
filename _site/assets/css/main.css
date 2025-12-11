@@ -1,74 +1,25 @@
 /* assets/css/main.css - Enhanced Main Stylesheet */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-/* Import modular stylesheets */
-@import url('base.css');
-@import url('typography.css');
-@import url('layout.css');
-@import url('navigation.css');
-@import url('header.css');
-@import url('components.css');
-@import url('footer.css');
-@import url('responsive.css');
-@import url('animations.css');
 
-/* Root Variables for Easy Theme Management */
-:root {
-  /* Primary Colors */
-  --jk-primary: #0b6cf0;
-  --jk-primary-hover: #0951c7;
-  --jk-primary-light: rgba(11, 108, 240, 0.1);
-  
-  /* Neutral Colors */
-  --jk-dark: #111827;
-  --jk-gray-900: #1f2937;
-  --jk-gray-800: #374151;
-  --jk-gray-700: #4b5563;
-  --jk-gray-600: #6b7280;
-  --jk-gray-500: #9ca3af;
-  --jk-gray-400: #d1d5db;
-  --jk-gray-300: #e5e7eb;
-  --jk-gray-200: #f3f4f6;
-  --jk-gray-100: #f9fafb;
-  --jk-white: #ffffff;
-  
-  /* Semantic Colors */
-  --jk-success: #10b981;
-  --jk-warning: #f59e0b;
-  --jk-error: #ef4444;
-  --jk-info: #3b82f6;
-  
-  /* Spacing */
-  --jk-spacing-xs: 0.25rem;
-  --jk-spacing-sm: 0.5rem;
-  --jk-spacing-md: 1rem;
-  --jk-spacing-lg: 1.5rem;
-  --jk-spacing-xl: 2rem;
-  --jk-spacing-2xl: 3rem;
-  --jk-spacing-3xl: 4rem;
-  
-  /* Border Radius */
-  --jk-radius-sm: 6px;
-  --jk-radius-md: 8px;
-  --jk-radius-lg: 12px;
-  --jk-radius-xl: 16px;
-  
-  /* Shadows */
-  --jk-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --jk-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --jk-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
-  --jk-shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.15);
-  
-  /* Transitions */
-  --jk-transition-fast: 0.15s ease;
-  --jk-transition-base: 0.2s ease;
-  --jk-transition-slow: 0.3s ease;
-  
-  /* Z-index */
-  --jk-z-dropdown: 100;
-  --jk-z-sticky: 200;
-  --jk-z-fixed: 300;
-  --jk-z-modal: 400;
-  --jk-z-popover: 500;
-  --jk-z-tooltip: 600;
-}
+@import url('search.css');
+
+/* Import modular stylesheets */
+
+@import url('navigation.css');
+
+
+@import url('footer.css');
+
+@import url('post.css');
+@import url('index.css');
+
+
+@import url('study_abroad.css');
+@import url('study_abroad_services.css');
+@import url('cv.css');
+@import url('publications.css');
+
+@import url('blogs.css');
+
+

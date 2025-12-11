@@ -56,8 +56,10 @@ main:
         url: /portfolio/writing/
 
   - title: "Blog Posts"
-    url: /year-archive/
+    url: /blog/
     children:
+      - title: "Abroad Studies"
+        url: /blog/study-abroad/
       - title: "Career & Coaching"
         url: /blog/career/
       - title: "Education & Research"

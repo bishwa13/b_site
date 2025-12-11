@@ -1,0 +1,349 @@
+/* ====================================================================
+  BLOG INDEX PAGE STYLES
+==================================================================== */
+
+/* --- General Structure & Typography --- */
+.section-heading, .section-heading-small {
+    text-align: center;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 2rem;
+}
+.section-heading { font-size: 2rem; }
+.section-heading-small { font-size: 1.5rem; color: #0b6cf0; }
+
+.jk-btn-center {
+    display: block;
+    width: fit-content;
+    margin: 3rem auto 0 auto;
+}
+
+/* --- 1. Blog Hero Section --- */
+.blog-hero {
+    padding: 5rem 0 3rem 0;
+    background: linear-gradient(135deg, #f1f1f1, #e9e9e9);
+    border-bottom: 5px solid #0b6cf0;
+    text-align: center;
+}
+
+.blog-hero-title {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.blog-hero-intro {
+    font-size: 1.25rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+}
+
+.blog-search-box {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #0b6cf0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#blog-search {
+    padding: 1rem 1.5rem;
+    flex-grow: 1;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.blog-search-box button {
+    background-color: #0b6cf0;
+    color: white;
+    padding: 0 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.2s;
+}
+
+.blog-search-box button:hover {
+    background-color: #085ad0;
+}
+
+
+/* --- 2. Category Navigation --- */
+.blog-categories {
+    padding: 3rem 0 2rem 0;
+}
+
+.category-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cat-link {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 2px solid;
+    transition: all 0.2s ease;
+}
+
+/* Category Color Coding (Use theme colors) */
+.cat-hydrology { border-color: #0b6cf0; color: #0b6cf0; }
+.cat-gis { border-color: #28a745; color: #28a745; }
+.cat-consulting { border-color: #ff9800; color: #ff9800; }
+.cat-education { border-color: #884EA0; color: #884EA0; }
+.cat-regional { border-color: #dc3545; color: #dc3545; }
+.cat-all { border-color: #343a40; color: #343a40; }
+
+.cat-link:hover,
+.cat-link.active {
+    color: #ffffff !important;
+    background-color: currentColor; /* Uses the border color as background */
+}
+
+
+/* --- 3. Featured Posts --- */
+.blog-featured {
+    padding: 4rem 0;
+}
+
+.featured-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: 
+        "lg sm1"
+        "lg sm2";
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 2rem;
+}
+
+.featured-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Large Featured Card */
+.featured-card-lg {
+    grid-area: lg;
+}
+
+.featured-image-container {
+    height: 300px; /* Fixed height for visual consistency */
+    overflow: hidden;
+}
+
+.featured-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.featured-card-lg:hover .featured-image {
+    transform: scale(1.05);
+}
+
+.featured-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.featured-card-lg .featured-title {
+    font-size: 1.8rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.featured-excerpt {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Small Featured Cards */
+.featured-card-sm:nth-child(2) { grid-area: sm1; }
+.featured-card-sm:nth-child(3) { grid-area: sm2; }
+
+.featured-card-sm {
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+
+.featured-card-sm .featured-title {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.featured-card a {
+    text-decoration: none;
+    color: #222;
+}
+.featured-card a:hover {
+    color: #0b6cf0;
+    text-decoration: underline;
+}
+
+/* Tags/Categories on Cards */
+.featured-category {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    color: white;
+}
+.tag-hydrology { background-color: #0b6cf0; }
+.tag-consulting { background-color: #ff9800; }
+.tag-education { background-color: #884EA0; }
+
+
+/* Metadata */
+.featured-meta, .article-meta {
+    font-size: 0.9rem;
+    color: #777;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+/* --- 4. Main Article List --- */
+.blog-main-list {
+    padding: 4rem 0;
+}
+
+.article-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.article-summary-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: white;
+}
+
+.article-summary-card:hover {
+    border-color: #0b6cf0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.article-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-image-container {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.article-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-category {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #0b6cf0;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.tag-gis { color: #28a745; }
+.tag-regional { color: #dc3545; }
+
+.article-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+}
+
+.article-title a {
+    text-decoration: none;
+    color: #222;
+}
+
+.article-title a:hover {
+    color: #0b6cf0;
+}
+
+.article-excerpt {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    /* Collapse featured grid on tablets/smaller screens */
+    .featured-grid {
+        grid-template-areas: 
+            "lg"
+            "sm1"
+            "sm2";
+        grid-template-columns: 1fr;
+    }
+
+    .featured-image-container {
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-hero {
+        padding: 3rem 0 2rem 0;
+    }
+    
+    .blog-hero-title {
+        font-size: 2rem;
+    }
+
+    .blog-search-box {
+        flex-direction: column;
+    }
+    
+    .blog-search-box button {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .article-list-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .article-summary-card {
+        flex-direction: column;
+    }
+
+    .article-image-container {
+        width: 100%;
+        height: 150px;
+        order: -1; /* Place image above content on mobile */
+    }
+}

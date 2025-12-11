@@ -1,0 +1,496 @@
+/* ====================================================================
+  0. BASE & UTILITIES
+  (Establishes a modern typography and color foundation)
+==================================================================== */
+
+/* Modern Font Stack (Prioritizes system fonts for fast loading) */
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333333; /* Dark text for high readability */
+  background-color: #ffffff; /* Clean white background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Reset for Elements */
+h1, h2, h3, h4, p, ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Standard Section Padding */
+.jk-section {
+  padding: 6rem 0; /* Generous vertical spacing */
+}
+
+/* Max Width Container */
+.jk-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Section Header Style */
+.jk-section-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.jk-section-header h2 {
+  font-size: 2.25rem;
+  font-weight: 800; /* Extra bold for impact */
+  color: #222222;
+  margin-bottom: 0.75rem;
+}
+
+/* Subtle Separator */
+.jk-section-divider {
+  width: 50px;
+  height: 4px;
+  background-color: #0b6cf0; /* Primary color */
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Utility Classes */
+.jk-bg-gray-50 { background-color: #f9f9f9; }
+.jk-bg-gray-100 { background-color: #f1f1f1; }
+.jk-bg-white { background-color: #ffffff; }
+.jk-text-center { text-align: center; }
+.jk-text-muted { color: #6c757d; }
+.jk-lead { font-size: 1.25rem; font-weight: 300; color: #555; }
+.jk-fw-semibold { font-weight: 600; }
+.jk-mb-0 { margin-bottom: 0 !important; }
+.jk-py-xl { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+
+
+/* ====================================================================
+  1. HERO SECTION
+  (High-impact introduction with clear call-to-action)
+==================================================================== */
+
+.jk-hero {
+  /* Slightly more padding than a normal section for prominence */
+  padding: 8rem 0 6rem 0; 
+  background-color: #f9f9f9; 
+  /* Subtle gradient for modern depth */
+  background-image: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%); 
+}
+
+.jk-hero-wrapper {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+}
+
+.jk-hero-content {
+  max-width: 900px; /* Constrain text width for better readability */
+  text-align: center;
+}
+
+.jk-hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem); /* Responsive typography */
+  font-weight: 900; /* Maximum impact */
+  color: #1a1a1a;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.jk-hero-subtitle {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 300; /* Light weight for contrast */
+  color: #555555;
+  margin-bottom: 2rem;
+}
+
+.jk-hero-highlight {
+  font-weight: 600; /* Emphasize key concepts */
+  color: #0b6cf0; /* Primary color */
+}
+
+/* Main Profile Info Block (Tidbit about the person) */
+.jk-info-block {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-left: 5px solid #0b6cf0; /* Accent line */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle lift */
+  text-align: left;
+}
+
+.jk-info-text {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Call to Action Buttons */
+.jk-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* Allows buttons to stack on small screens */
+}
+
+
+/* ====================================================================
+  2. BUTTON STYLES
+  (Consistent, modern button design)
+==================================================================== */
+
+.jk-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.75rem;
+  border-radius: 8px; /* Modern rounded corners */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.jk-btn-primary {
+  background-color: #0b6cf0; /* Deep Blue */
+  color: #ffffff;
+  border: 1px solid #0b6cf0;
+}
+
+.jk-btn-primary:hover {
+  background-color: #085ad0;
+  border-color: #085ad0;
+  box-shadow: 0 4px 10px rgba(0, 119, 204, 0.2);
+}
+
+.jk-btn-outline {
+  background-color: transparent;
+  color: #333333;
+  border: 1px solid #cccccc;
+}
+
+.jk-btn-outline:hover {
+  background-color: #f1f1f1;
+  color: #0b6cf0;
+  border-color: #0b6cf0;
+}
+
+.jk-btn-lg {
+  font-size: 1.1rem;
+  padding: 1.1rem 2rem;
+}
+
+
+/* ====================================================================
+  3. ABOUT SECTION (Who I Am)
+  (Two-column layout for roles and skills)
+==================================================================== */
+
+.jk-about-intro {
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  font-size: 1.15rem;
+  text-align: center;
+  color: #555555;
+}
+
+.jk-about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adaptive 2-column layout */
+  gap: 2rem;
+  align-items: start;
+}
+
+.jk-about-card {
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Clearer shadow for depth */
+  border-top: 4px solid #0b6cf0;
+  height: 100%; /* Ensure both cards are same height */
+}
+
+.jk-about-card-accent {
+  border-top-color: #28a745; /* Green accent for skills card */
+}
+
+.jk-about-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.jk-card-icon {
+  font-size: 1.5rem;
+}
+
+/* Roles List (Definition List styling) */
+.jk-about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+.jk-role-title {
+  font-weight: 600;
+  color: #222222;
+  font-size: 1.05rem;
+}
+
+.jk-role-org {
+  font-style: italic;
+  color: #777777;
+  font-size: 0.95rem;
+}
+
+/* Skills Tags */
+.jk-skills-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0b6cf0;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.jk-skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.jk-skill-tag {
+  display: inline-block;
+  background-color: #e3f2fd; /* Light background for tags */
+  color: #0b6cf0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #bbdefb;
+}
+
+
+/* ====================================================================
+  4. GRID & CARD STYLES (Services & Explore)
+==================================================================== */
+
+/* Adaptive Grid for cards */
+.jk-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.jk-grid-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(var(--jk-grid-min, 280px), 1fr));
+}
+
+.jk-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 5px solid #cccccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.jk-card:hover {
+  border-left-color: #0b6cf0; /* Hover accent */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.jk-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 0.5rem;
+}
+
+/* Feature Cards (Smaller, icon-based cards) */
+.jk-feature-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: border-bottom 0.3s ease, transform 0.3s ease;
+  border-bottom: 4px solid transparent;
+}
+
+.jk-feature-card:hover {
+  border-bottom-color: #0b6cf0;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.jk-feature-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.jk-feature-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Link Style */
+.jk-link {
+  color: #0b6cf0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.jk-link:hover {
+  color: #085ad0;
+  text-decoration: underline;
+}
+
+
+/* ====================================================================
+  5. INSIGHTS/BLOG LIST
+==================================================================== */
+
+.jk-flex {
+  display: flex;
+}
+.jk-justify-between {
+  justify-content: space-between;
+}
+.jk-items-center {
+  align-items: center;
+}
+.jk-mb-xl {
+  margin-bottom: 2.5rem;
+}
+.jk-gap-md {
+  gap: 1.5rem;
+}
+.jk-flex-wrap {
+  flex-wrap: wrap;
+}
+.jk-justify-center {
+  justify-content: center;
+}
+
+.jk-post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.jk-post-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.jk-post-link {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222222;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.jk-post-link:hover {
+  color: #0b6cf0;
+  text-decoration: underline;
+}
+
+.jk-post-meta {
+  margin-top: 0.5rem;
+}
+
+.jk-post-date {
+  font-size: 0.95rem;
+  color: #777777;
+  flex-shrink: 0; /* Prevents date from wrapping */
+  margin-left: 1rem;
+}
+
+.jk-badge {
+  display: inline-block;
+  padding: 0.3em 0.7em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 4px;
+}
+
+.jk-badge-primary {
+  color: #0b6cf0;
+  background-color: #e3f2fd;
+}
+
+
+/* ====================================================================
+  6. RESPONSIVENESS (Mobile Adjustments)
+==================================================================== */
+
+@media (max-width: 992px) {
+  /* Reduce padding on larger sections */
+  .jk-section {
+    padding: 4rem 0;
+  }
+  
+  /* Hero Section Adjustments */
+  .jk-hero {
+    padding: 6rem 0 4rem 0;
+  }
+  
+  .jk-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .jk-hero-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  /* Stack buttons on small screens */
+  .jk-hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .jk-btn {
+    width: 100%; /* Full width buttons for touch targets */
+    max-width: 350px;
+  }
+  
+  /* About Grid Stacks */
+  .jk-about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Post list stacks nicely */
+  .jk-post-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .jk-post-date {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Smaller section headers on tiny screens */
+  .jk-section-header h2 {
+    font-size: 1.75rem;
+  }
+}

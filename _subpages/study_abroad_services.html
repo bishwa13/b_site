@@ -1,26 +1,119 @@
 ---
 layout: page
-title: "Study Abroad Services"
+title: "Comprehensive Study Abroad Services"
 permalink: /study-abroad/services/
+description: Detailed breakdown of study abroad consultation services, including profile assessment, application management, visa support, and pre-departure briefings.
 ---
 
-<h1>Study Abroad Services</h1>
-<p>Professional services and support for international students.</p>
+<main id="main-content">
 
-{% if site.categories.study_abroad_services.size > 0 %}
-<ul class="services-list">
-  {% for post in site.categories.study_abroad_services %}
-    <li class="service-item">
-      <a href="{{ post.url }}" class="service-link">
-        <h3>{{ post.title }}</h3>
-        <span class="service-date">{{ post.date | date: "%B %d, %Y" }}</span>
-      </a>
-      {% if post.excerpt %}
-        <p class="service-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
-{% else %}
-<p>No services listed yet.</p>
-{% endif %}
+  <section class="sa-page-header">
+    <div class="jk-container">
+      <h1 class="sa-page-title">Our Study Abroad Advisory Services</h1>
+      <p class="sa-page-intro">We provide a seamless, end-to-end guidance system covering everything from your initial career mapping to your successful university enrollment abroad.</p>
+
+      <nav aria-label="Breadcrumb" style="margin-top: 2rem;">
+        <a href="{{ '/study-abroad/' | relative_url }}" class="sa-back-link">← Back to Study Abroad Overview</a>
+      </nav>
+    </div>
+  </section>
+
+  <section class="jk-section sa-services-section">
+    <div class="jk-container">
+      <h2 class="section-heading">Detailed Service Breakdown</h2>
+
+      <article class="sa-service-category">
+        <h3 class="sa-category-title"><span class="sa-icon-large" aria-hidden="true">🧠</span> Phase 1: Strategic Planning & Profile Building</h3>
+        <p class="sa-category-description">We start by understanding your goals, assessing your current academic and professional profile, and building a foundation for a compelling application.</p>
+
+        <div class="sa-service-grid">
+          <div class="sa-service-card">
+            <h4>Profile & Career Mapping</h4>
+            <ul>
+              <li>Detailed analysis of transcripts, background, and work experience.</li>
+              <li>Identification of best-fit career outcomes (long-term vs. short-term goals).</li>
+              <li>**Target Country Selection:** Advice on USA, UK, Australia, and other global destinations.</li>
+            </ul>
+          </div>
+
+          <div class="sa-service-card">
+            <h4>Course & University Shortlisting</h4>
+            <ul>
+              <li>Data-driven research to match your profile to acceptance rates and scholarship potential.</li>
+              <li>Shortlisting institutions based on location, reputation, cost, and specific research alignment.</li>
+              <li>Guidance on selecting the right level (Undergraduate, Graduate, Ph.D.).</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="sa-service-category">
+        <h3 class="sa-category-title sa-category-accent-blue"><span class="sa-icon-large" aria-hidden="true">📝</span> Phase 2: Application Management & Documentation</h3>
+        <p class="sa-category-description">Full support in preparing, polishing, and submitting your application package to meet competitive deadlines.</p>
+
+        <div class="sa-service-grid">
+          <div class="sa-service-card">
+            <h4>Narrative Coaching & Editing</h4>
+            <ul>
+              <li>**SOP/Personal Essay:** Structured coaching to draft and refine your Statement of Purpose, ensuring a unique, compelling narrative that showcases academic potential.</li>
+              <li>CV/Resume Polishing focusing on international academic standards.</li>
+              <li>Liaison with recommenders for effective Letters of Recommendation (LORs).</li>
+            </ul>
+          </div>
+
+          <div class="sa-service-card">
+            <h4>Test Preparation & Submission</h4>
+            <ul>
+              <li>Advice on IELTS, TOEFL, GRE, and GMAT requirements and test dates.</li>
+              <li>Guidance on achieving test score waivers where applicable.</li>
+              <li>Ensuring official score submission to all target universities.</li>
+            </ul>
+          </div>
+
+          <div class="sa-service-card sa-full-width">
+            <h4>Application & Admission Management</h4>
+            <ul>
+              <li>Managing application portals and ensuring all documents (transcripts, certificates) are verified correctly.</li>
+              <li>Constant liaison with university admissions departments to track application status.</li>
+              <li>Handling conditional offer fulfillment and acceptance procedures.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="sa-service-category">
+        <h3 class="sa-category-title sa-category-accent-green"><span class="sa-icon-large" aria-hidden="true">💰</span> Phase 3: Financial & Visa Support</h3>
+        <p class="sa-category-description">Securing your funding and obtaining your visa are the final, critical hurdles. We provide certified, ethical guidance to ensure compliance.</p>
+
+        <div class="sa-service-grid">
+          <div class="sa-service-card">
+            <h4>Scholarship & Financial Strategy</h4>
+            <ul>
+              <li>Identifying internal and external scholarship opportunities (merit, need-based, country-specific).</li>
+              <li>Detailed financial documentation preparation (proof of funds, sponsor letters).</li>
+              <li>Guidance on fee payment and tuition deposit processing.</li>
+            </ul>
+          </div>
+
+          <div class="sa-service-card">
+            <h4>Visa Documentation & Interview Prep</h4>
+            <ul>
+              <li>Certified checklist for all required embassy documentation (e.g., I-20, CAS, COE).</li>
+              <li>Rigorous mock interview sessions tailored to the specific embassy/consulate requirements (USA, UK, Australia).</li>
+              <li>Ethical advice on demonstrating genuine temporary entrant (GTE) status.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="jk-section sa-cta-bottom jk-text-center">
+    <div class="jk-container">
+      <h2 class="section-heading">Ready for a Guided Application?</h2>
+      <p class="jk-lead">Let's build your pathway to a world-class education. Schedule a session to discuss your personalized service package.</p>
+      <a href="{{ '/contact/' | relative_url }}" class="jk-btn jk-btn-primary jk-btn-lg" style="margin-top: 1rem;">Book a Free Consultation →</a>
+    </div>
+  </section>
+
+</main>

@@ -1,0 +1,160 @@
+/* ====================================================================
+  SERVICE PAGE SPECIFIC STYLES
+  (Designed for clarity, structure, and professional presentation)
+==================================================================== */
+
+/* --- Page Header / Breadcrumb --- */
+.sa-page-header {
+    padding: 3rem 0;
+    background-color: #f1f1f1;
+    border-bottom: 5px solid #0b6cf0;
+    text-align: center;
+}
+
+.sa-page-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.sa-page-intro {
+    font-size: 1.15rem;
+    color: #555555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sa-back-link {
+    color: #0b6cf0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.sa-back-link:hover {
+    color: #085ad0;
+    text-decoration: underline;
+}
+
+/* --- Service Categories Section --- */
+.sa-services-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.sa-service-category {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); /* Soft container shadow */
+    border-left: 8px solid #0b6cf0; /* Primary accent for Phase 1 */
+}
+
+.sa-category-accent-blue {
+    border-left-color: #0b6cf0; /* Re-using primary blue for Phase 2 */
+}
+
+.sa-category-accent-green {
+    border-left-color: #28a745; /* Green for success/financial phase */
+}
+
+.sa-category-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #0b6cf0;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sa-category-accent-green .sa-category-title {
+    color: #28a745;
+}
+
+.sa-icon-large {
+    font-size: 1.75rem;
+    line-height: 1;
+}
+
+.sa-category-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* --- Service Grid (Inner Cards) --- */
+.sa-service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.sa-service-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 3px solid #ccc;
+}
+
+.sa-service-card h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.sa-service-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sa-service-card ul li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Checkmark style for list items */
+.sa-service-card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #0b6cf0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Utility to span full width */
+.sa-full-width {
+    grid-column: 1 / -1;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+
+/* --- Bottom CTA Section --- */
+.sa-cta-bottom {
+    background-color: #e3f2fd; /* Light blue background */
+    border-top: 1px solid #bbdefb;
+}
+
+
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+    .sa-service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sa-service-category {
+        padding: 1.5rem;
+    }
+
+    .sa-category-title {
+        font-size: 1.5rem;
+    }
+}

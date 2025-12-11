@@ -1,0 +1,360 @@
+/* ====================================================================
+  PUBLICATIONS PAGE STYLES (Overview - publications.html)
+==================================================================== */
+
+/* --- General Utilities/Resets (Assuming basic utility classes like jk-container, jk-section exist) --- */
+.section-heading {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.jk-lead {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* --- Header & Navigation --- */
+.pub-header {
+    padding: 3rem 0 2rem 0;
+    background-color: #f1f1f1;
+    border-bottom: 5px solid #0b6cf0; /* Primary Accent */
+    text-align: center;
+}
+
+.pub-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.pub-intro {
+    font-size: 1.15rem;
+    color: #555555;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+}
+
+.pub-section-nav {
+    margin-top: 1.5rem;
+}
+
+.pub-section-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem; /* Reduced gap slightly for more links */
+}
+
+.pub-nav-link {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid #dddddd;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #555;
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.pub-nav-link:hover {
+    background-color: #0b6cf0;
+    color: #ffffff;
+    border-color: #0b6cf0;
+    transform: translateY(-2px);
+}
+
+/* Navigation Link Accent Colors */
+.pub-nav-thesis {
+    color: #884EA0; 
+    border-color: #884EA0;
+}
+.pub-nav-thesis:hover {
+    background-color: #884EA0;
+    border-color: #884EA0;
+}
+
+.pub-nav-data {
+    color: #17A2B8; 
+    border-color: #17A2B8;
+}
+.pub-nav-data:hover {
+    background-color: #17A2B8;
+    border-color: #17A2B8;
+}
+
+
+/* --- Featured Publications Section --- */
+.pub-featured-section {
+    padding-top: 4rem;
+}
+
+.pub-featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.pub-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #0b6cf0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.pub-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Card Accent Colors */
+.pub-card-journal { border-top-color: #0b6cf0; }
+.pub-card-report { border-top-color: #28a745; }
+.pub-card-conference { border-top-color: #ff9800; }
+
+.pub-type-badge {
+    display: inline-block;
+    padding: 0.3em 0.8em;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #0b6cf0;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.pub-card-report .pub-type-badge { background-color: #28a745; }
+.pub-card-conference .pub-type-badge { background-color: #ff9800; }
+
+.pub-card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.75rem;
+}
+
+.pub-card-abstract {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.pub-metadata {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #eee;
+}
+
+.pub-link-doi {
+    color: #0b6cf0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.pub-link-doi:hover {
+    color: #085ad0;
+    text-decoration: underline;
+}
+
+.pub-more-action {
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* --- Theses & Major Projects Section --- */
+.pub-thesis-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.pub-thesis-heading {
+    color: #884EA0; /* Purple accent */
+}
+
+.thesis-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.thesis-card {
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #884EA0;
+    display: flex;
+    flex-direction: column;
+}
+
+.thesis-icon {
+    font-size: 2rem;
+    color: #884EA0;
+    margin-bottom: 1rem;
+}
+
+.thesis-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.thesis-role {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.thesis-abstract {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.thesis-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed #eee;
+    padding-top: 1rem;
+}
+
+.thesis-date {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #884EA0;
+}
+
+.thesis-link {
+    color: #0b6cf0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.thesis-link:hover {
+    color: #085ad0;
+    text-decoration: underline;
+}
+
+/* --- Research Themes Section --- */
+.pub-themes-section {
+    padding-top: 4rem;
+}
+
+.pub-themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.pub-theme-card {
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    transition: border-color 0.3s ease;
+}
+
+.pub-theme-card:hover {
+    border-color: #0b6cf0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.theme-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.pub-theme-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.pub-theme-card p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* --- Data & Open Science CTA --- */
+.pub-data-cta {
+    padding: 4rem 0;
+    background-color: #eaf8fa; /* Light cyan background */
+    border-top: 4px solid #17A2B8;
+}
+
+.pub-data-heading {
+    color: #17A2B8; /* Teal accent */
+}
+
+.pub-data-btn {
+    background-color: #17A2B8;
+    border-color: #17A2B8;
+    margin-top: 1.5rem;
+}
+
+.pub-data-btn:hover {
+    background-color: #138496;
+    border-color: #138496;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .pub-section-nav ul {
+        gap: 0.5rem;
+        padding: 0 1rem;
+    }
+    
+    .pub-nav-link {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+    
+    .pub-featured-grid,
+    .thesis-card-grid,
+    .pub-themes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pub-more-action {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Assuming a utility class for large buttons, adjust as needed */
+    .jk-btn-lg {
+        width: 100%;
+    }
+}

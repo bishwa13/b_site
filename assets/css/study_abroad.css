@@ -1,0 +1,295 @@
+/* ====================================================================
+  GLOBAL BASE STYLES (Reusing Home Page Styles)
+==================================================================== */
+/* Assuming you have .jk-container, .jk-section, .jk-btn-primary, etc.,
+   from the previous home page CSS. Only specific Study Abroad styles are listed below.
+*/
+
+.section-heading {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.jk-lead {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- UTILITY COLORS --- */
+.sa-blue-heading {
+    color: #0b6cf0; /* Primary accent */
+}
+
+
+/* ====================================================================
+  1. HERO / BANNER SECTION
+==================================================================== */
+
+.sa-hero {
+    padding: 5rem 0 3rem 0;
+    background-color: #f9f9f9;
+    /* Soft border radius for a modern block look */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.sa-hero-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.sa-hero-subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    color: #555555;
+    max-width: 900px;
+    margin: 0 auto 2rem auto;
+}
+
+/* Certification Tagline (Trust element) */
+.sa-tagline {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #28a745; /* Green for success/trust */
+    background-color: #e6f7eb;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 5px rgba(40, 167, 69, 0.1);
+}
+
+
+/* ====================================================================
+  2. NAVIGATION MENU
+==================================================================== */
+
+.study-abroad-nav {
+    margin-top: -1.5rem; /* Pull up to overlap the hero for design effect */
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.study-abroad-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.sa-nav-link {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #333333;
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.sa-nav-link:hover {
+    background-color: #0b6cf0;
+    color: #ffffff;
+    border-color: #0b6cf0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 119, 204, 0.1);
+}
+
+
+/* ====================================================================
+  3. VALUE PROPOSITION & FEATURES
+==================================================================== */
+
+.sa-value-intro {
+    margin-bottom: 3rem;
+}
+
+.sa-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.sa-feature-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #0b6cf0;
+    transition: transform 0.3s ease;
+}
+
+.sa-feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.sa-feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0b6cf0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.sa-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+
+/* ====================================================================
+  4. CORE SERVICE BREAKDOWN
+==================================================================== */
+
+.sa-core-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .sa-core-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sa-core-item {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.sa-core-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 0.5rem;
+}
+
+.sa-core-item ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.sa-core-item ul li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.sa-core-item ul li::before {
+    content: "→"; /* Modern, simple arrow indicator */
+    color: #0b6cf0;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+
+/* ====================================================================
+  5. LANGUAGE PROFICIENCY SECTION
+==================================================================== */
+
+.sa-proficiency-section {
+    background-color: #ffffff;
+}
+
+.sa-proficiency-intro {
+    margin-bottom: 3rem;
+}
+
+.sa-proficiency-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.sa-test-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #f5faff; /* Very light blue background */
+    border: 1px solid #bbdefb;
+    box-shadow: 0 2px 8px rgba(0, 119, 204, 0.08);
+}
+
+.test-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0b6cf0;
+    margin-bottom: 0.75rem;
+}
+
+.test-focus {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.sa-advice-block {
+    grid-column: 1 / -1; /* Make this block span the entire width */
+    padding: 2rem;
+    background-color: #fffbe6; /* Light yellow for advisory block */
+    border: 2px solid #ffe082;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sa-advice-block h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ff9800; /* Amber accent */
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sa-btn-outline {
+    margin-top: 1.5rem;
+    border-color: #ff9800;
+    color: #ff9800;
+    background-color: transparent;
+}
+
+.sa-btn-outline:hover {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+
+/* ====================================================================
+  6. CALL TO ACTION
+==================================================================== */
+
+.sa-cta-section {
+    padding: 4rem 0;
+    background-color: #e6f7eb; /* Light success/trust color */
+    border-top: 5px solid #28a745;
+}
