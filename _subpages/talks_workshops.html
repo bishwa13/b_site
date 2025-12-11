@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Workshops"
+permalink: /talks/workshops/
+---
+
+<h1>Workshops</h1>
+<p>Professional workshops and training sessions.</p>
+
+{% if site.categories.talks_workshops.size > 0 %}
+<ul class="talks-list">
+  {% for post in site.categories.talks_workshops %}
+    <li class="talk-item">
+      <a href="{{ post.url }}" class="talk-link">
+        <h3>{{ post.title }}</h3>
+        <span class="talk-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="talk-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No workshops listed yet.</p>
+{% endif %}

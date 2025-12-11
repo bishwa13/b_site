@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Study Abroad Services"
+permalink: /study-abroad/services/
+---
+
+<h1>Study Abroad Services</h1>
+<p>Professional services and support for international students.</p>
+
+{% if site.categories.study_abroad_services.size > 0 %}
+<ul class="services-list">
+  {% for post in site.categories.study_abroad_services %}
+    <li class="service-item">
+      <a href="{{ post.url }}" class="service-link">
+        <h3>{{ post.title }}</h3>
+        <span class="service-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="service-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No services listed yet.</p>
+{% endif %}

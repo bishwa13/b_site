@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Environment Solutions"
+permalink: /portfolio/environment/
+---
+
+<h1>Environment Solutions</h1>
+<p>Projects focused on environmental sustainability and solutions.</p>
+
+{% if site.categories.portfolio_environment.size > 0 %}
+<ul class="portfolio-list">
+  {% for post in site.categories.portfolio_environment %}
+    <li class="portfolio-item">
+      <a href="{{ post.url }}" class="portfolio-link">
+        <h3>{{ post.title }}</h3>
+        <span class="portfolio-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="portfolio-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No environment projects listed yet.</p>
+{% endif %}

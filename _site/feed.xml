@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-10T16:26:53+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ImBishwa</title><subtitle>This is my official personal site, where I put my thoughts, learning and whatever I want. Its not me, its my progress.</subtitle><entry><title type="html">Welcome to My Jekyll Site</title><link href="http://localhost:4000/blog/2025/11/24/welcome-to-the-blog.html" rel="alternate" type="text/html" title="Welcome to My Jekyll Site" /><published>2025-11-24T04:15:00+00:00</published><updated>2025-11-24T04:15:00+00:00</updated><id>http://localhost:4000/blog/2025/11/24/welcome-to-the-blog</id><content type="html" xml:base="http://localhost:4000/blog/2025/11/24/welcome-to-the-blog.html"><![CDATA[<p>Welcome to my new Jekyll-powered website! This is a sample blog post to demonstrate the posting functionality.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-10T18:30:09+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ImBishwa</title><subtitle>This is my official personal site, where I put my thoughts, learning and whatever I want. Its not me, its my progress.</subtitle><entry><title type="html">Welcome to My Jekyll Site</title><link href="http://localhost:4000/blog/2025/11/24/welcome-to-the-blog.html" rel="alternate" type="text/html" title="Welcome to My Jekyll Site" /><published>2025-11-24T04:15:00+00:00</published><updated>2025-11-24T04:15:00+00:00</updated><id>http://localhost:4000/blog/2025/11/24/welcome-to-the-blog</id><content type="html" xml:base="http://localhost:4000/blog/2025/11/24/welcome-to-the-blog.html"><![CDATA[<p>Welcome to my new Jekyll-powered website! This is a sample blog post to demonstrate the posting functionality.</p>
 
 <h2 id="getting-started">Getting Started</h2>
 
@@ -50,4 +50,288 @@
   <li>Customizing the CSS in <code class="language-plaintext highlighter-rouge">assets/css/main.css</code></li>
 </ol>
 
-<p>Happy blogging! 🎉</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Welcome to my new Jekyll-powered website! This is a sample blog post to demonstrate the posting functionality.]]></summary></entry></feed>
+<p>Happy blogging! 🎉</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Welcome to my new Jekyll-powered website! This is a sample blog post to demonstrate the posting functionality.]]></summary></entry><entry><title type="html">Canada Application Guide</title><link href="http://localhost:4000/study-abroad/guides/canada/" rel="alternate" type="text/html" title="Canada Application Guide" /><published>2025-03-15T00:00:00+00:00</published><updated>2025-03-15T00:00:00+00:00</updated><id>http://localhost:4000/study-abroad/guides/canada-application-guide</id><content type="html" xml:base="http://localhost:4000/study-abroad/guides/canada/"><![CDATA[<h2 id="overview">Overview</h2>
+
+<p>Canada offers world-class education and excellent quality of life for international students. This guide covers everything you need to know about applying to Canadian universities.</p>
+
+<h2 id="entry-requirements">Entry Requirements</h2>
+
+<ul>
+  <li>High school diploma or equivalent</li>
+  <li>Proof of English proficiency (IELTS 6.5+, TOEFL 80+, or equivalent)</li>
+  <li>Academic transcripts</li>
+  <li>Letters of reference</li>
+  <li>Statement of purpose</li>
+</ul>
+
+<h2 id="application-process">Application Process</h2>
+
+<p>Canadian universities have varying application processes, but most accept applications online.</p>
+
+<p><strong>Application Timeline:</strong></p>
+<ul>
+  <li><strong>September - December:</strong> Application period opens</li>
+  <li><strong>January - March:</strong> Admission decisions released</li>
+  <li><strong>April - May:</strong> Visa application period</li>
+  <li><strong>June - August:</strong> Study permit processing</li>
+</ul>
+
+<h2 id="study-permit-requirements">Study Permit Requirements</h2>
+
+<p>International students must obtain a study permit to study in Canada.</p>
+
+<p><strong>Eligibility Requirements:</strong></p>
+<ul>
+  <li>Valid acceptance letter from a Designated Learning Institution (DLI)</li>
+  <li>Proof of financial support (usually CAD $20,000 - $30,000 per year)</li>
+  <li>No criminal or immigration violations</li>
+  <li>Medical exam (if required)</li>
+</ul>
+
+<p><strong>Application Process:</strong></p>
+<ol>
+  <li>Gather required documents</li>
+  <li>Apply online through Immigration, Refugees and Citizenship Canada (IRCC)</li>
+  <li>Provide biometrics if requested</li>
+  <li>Receive approval</li>
+  <li>Obtain valid passport before travel</li>
+</ol>
+
+<h2 id="costs">Costs</h2>
+
+<ul>
+  <li>Tuition fees: CAD $15,000 - $29,000 per year (varies by province and program)</li>
+  <li>Living expenses: CAD $15,000 - $30,000 per year</li>
+  <li>Study permit: Free (no application fee)</li>
+</ul>
+
+<h2 id="timeline-guide">Timeline Guide</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>When</th>
+      <th>What to Do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12 months before</td>
+      <td>Research programs and universities</td>
+    </tr>
+    <tr>
+      <td>8-9 months before</td>
+      <td>Submit applications</td>
+    </tr>
+    <tr>
+      <td>4-5 months before</td>
+      <td>Receive conditional/unconditional offers</td>
+    </tr>
+    <tr>
+      <td>3-4 months before</td>
+      <td>Apply for study permit</td>
+    </tr>
+    <tr>
+      <td>1-2 months before</td>
+      <td>Arrange accommodation and travel</td>
+    </tr>
+    <tr>
+      <td>Arrival</td>
+      <td>Complete arrival procedures</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="popular-universities">Popular Universities</h2>
+
+<ul>
+  <li>University of Toronto</li>
+  <li>University of British Columbia</li>
+  <li>McMaster University</li>
+  <li>University of Alberta</li>
+  <li>University of Montreal</li>
+</ul>
+
+<h2 id="useful-resources">Useful Resources</h2>
+
+<ul>
+  <li><a href="https://www.cicic.ca/">Canada’s Global Advantage</a></li>
+  <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship.html">Immigration, Refugees and Citizenship Canada</a></li>
+  <li><a href="https://cbie.ca/">Canadian Bureau for International Education</a></li>
+</ul>
+
+<hr />
+
+<p><em>Last updated: March 2025</em></p>]]></content><author><name></name></author><category term="applications_guides" /><category term="study_abroad" /><summary type="html"><![CDATA[Your complete guide to applying to Canadian universities. Learn about requirements, timelines, and the study permit process.]]></summary></entry><entry><title type="html">UK Application Guide</title><link href="http://localhost:4000/study-abroad/guides/uk/" rel="alternate" type="text/html" title="UK Application Guide" /><published>2025-03-01T00:00:00+00:00</published><updated>2025-03-01T00:00:00+00:00</updated><id>http://localhost:4000/study-abroad/guides/uk-application-guide</id><content type="html" xml:base="http://localhost:4000/study-abroad/guides/uk/"><![CDATA[<h2 id="overview">Overview</h2>
+
+<p>The United Kingdom is home to world-renowned universities. This guide walks you through the application process for UK universities.</p>
+
+<h2 id="entry-requirements">Entry Requirements</h2>
+
+<ul>
+  <li>Secondary school certificates or equivalent qualifications</li>
+  <li>IELTS or TOEFL scores (typically minimum 6.5 IELTS)</li>
+  <li>Personal statement</li>
+  <li>Academic references</li>
+</ul>
+
+<h2 id="ucas-application-process">UCAS Application Process</h2>
+
+<p>Most UK universities use the Universities and Colleges Admissions Service (UCAS) system for undergraduate applications.</p>
+
+<p><strong>Key Deadlines:</strong></p>
+<ul>
+  <li>October 15: Early deadline for Oxford and Cambridge</li>
+  <li>January 15: Main deadline for most universities</li>
+  <li>June 30: Final deadline for all applications</li>
+</ul>
+
+<p><strong>Application Steps:</strong></p>
+<ol>
+  <li>Create a UCAS account</li>
+  <li>Complete the application form</li>
+  <li>Submit with academic references and personal statement</li>
+  <li>Receive decisions from universities</li>
+  <li>Make your firm and insurance choices</li>
+</ol>
+
+<h2 id="visa-requirements">Visa Requirements</h2>
+
+<p>International students need a Student Visa (Subclass D of the Tier 4 system).</p>
+
+<p><strong>Required documents:</strong></p>
+<ul>
+  <li>Unconditional offer of admission</li>
+  <li>Financial proof (Confirmation of Acceptance for Studies - CAS statement)</li>
+  <li>Valid passport</li>
+  <li>English language certification</li>
+  <li>Tuberculosis test (if applicable)</li>
+</ul>
+
+<h2 id="costs">Costs</h2>
+
+<ul>
+  <li>Tuition fees: £10,000 - £38,000 per year for international students</li>
+  <li>Living expenses: £12,000 - £15,000 per year</li>
+</ul>
+
+<h2 id="timeline">Timeline</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Timeline</th>
+      <th>Task</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12 months before</td>
+      <td>Research and prepare</td>
+    </tr>
+    <tr>
+      <td>9-10 months before</td>
+      <td>Submit UCAS applications</td>
+    </tr>
+    <tr>
+      <td>3-6 months before</td>
+      <td>Receive conditional offers, meet conditions</td>
+    </tr>
+    <tr>
+      <td>2-3 months before</td>
+      <td>Apply for student visa</td>
+    </tr>
+    <tr>
+      <td>1 month before</td>
+      <td>Complete final arrangements</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="useful-resources">Useful Resources</h2>
+
+<ul>
+  <li><a href="https://www.ucas.com/">UCAS Official Site</a></li>
+  <li><a href="https://www.gov.uk/government/organisations/uk-visas-and-immigration">UK Visas and Immigration</a></li>
+  <li><a href="https://www.britishcouncil.org/">British Council</a></li>
+</ul>
+
+<hr />
+
+<p><em>Last updated: March 2025</em></p>]]></content><author><name></name></author><category term="applications_guides" /><category term="study_abroad" /><summary type="html"><![CDATA[Complete guide to applying to universities in the United Kingdom. Discover UCAS, visa requirements, and important deadlines.]]></summary></entry><entry><title type="html">Australia Application Guide</title><link href="http://localhost:4000/study-abroad/guides/australia/" rel="alternate" type="text/html" title="Australia Application Guide" /><published>2025-02-20T00:00:00+00:00</published><updated>2025-02-20T00:00:00+00:00</updated><id>http://localhost:4000/study-abroad/guides/australia-application-guide</id><content type="html" xml:base="http://localhost:4000/study-abroad/guides/australia/"><![CDATA[<h2 id="overview">Overview</h2>
+
+<p>Australia is a popular destination for international students. This guide covers the essential steps to apply to Australian universities.</p>
+
+<h2 id="entry-requirements">Entry Requirements</h2>
+
+<ul>
+  <li>Valid passport</li>
+  <li>Academic transcripts</li>
+  <li>English language proficiency (IELTS, TOEFL, or equivalent)</li>
+  <li>Statement of purpose</li>
+</ul>
+
+<h2 id="application-timeline">Application Timeline</h2>
+
+<h3 id="12-months-before">12 Months Before</h3>
+<ul>
+  <li>Research universities and programs</li>
+  <li>Gather required documents</li>
+  <li>Prepare for language tests</li>
+</ul>
+
+<h3 id="9-10-months-before">9-10 Months Before</h3>
+<ul>
+  <li>Submit applications to universities</li>
+  <li>Monitor application status</li>
+</ul>
+
+<h3 id="6-8-months-before">6-8 Months Before</h3>
+<ul>
+  <li>Receive conditional or unconditional offers</li>
+  <li>Accept offer from your chosen university</li>
+</ul>
+
+<h3 id="3-6-months-before">3-6 Months Before</h3>
+<ul>
+  <li>Apply for student visa</li>
+  <li>Arrange accommodation</li>
+  <li>Make tuition fee payments</li>
+</ul>
+
+<h3 id="1-2-months-before">1-2 Months Before</h3>
+<ul>
+  <li>Complete final preparations</li>
+  <li>Arrange travel</li>
+</ul>
+
+<h2 id="visa-process">Visa Process</h2>
+
+<p>The Australian student visa (subclass 500) is required for all international students. The process typically takes 4-6 weeks.</p>
+
+<p><strong>Required documents:</strong></p>
+<ul>
+  <li>Confirmation of Enrolment (CoE)</li>
+  <li>Proof of financial capacity</li>
+  <li>Health clearance (MIAC)</li>
+  <li>Character certificate</li>
+</ul>
+
+<h2 id="costs">Costs</h2>
+
+<ul>
+  <li>Tuition fees: AUD $15,000 - $35,000 per year (varies by institution and program)</li>
+  <li>Living expenses: AUD $20,000 - $30,000 per year</li>
+</ul>
+
+<h2 id="useful-resources">Useful Resources</h2>
+
+<ul>
+  <li><a href="https://www.studyinaustralia.gov.au/">Study in Australia Official Site</a></li>
+  <li><a href="https://immi.homeaffairs.gov.au/">Department of Home Affairs</a></li>
+  <li><a href="https://www.universitiesaustralia.edu.au/">Universities Australia</a></li>
+</ul>
+
+<hr />
+
+<p><em>Last updated: February 2025</em></p>]]></content><author><name></name></author><category term="applications_guides" /><category term="study_abroad" /><summary type="html"><![CDATA[A comprehensive guide to applying to universities in Australia. Learn about entry requirements, visa processes, and timeline.]]></summary></entry></feed>

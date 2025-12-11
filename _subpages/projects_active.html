@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Active Projects"
+permalink: /projects/active/
+---
+
+<h1>Active Projects</h1>
+<p>Currently ongoing research and professional projects.</p>
+
+{% if site.categories.projects_active.size > 0 %}
+<ul class="projects-list">
+  {% for post in site.categories.projects_active %}
+    <li class="project-item">
+      <a href="{{ post.url }}" class="project-link">
+        <h3>{{ post.title }}</h3>
+        <span class="project-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="project-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No active projects listed yet.</p>
+{% endif %}

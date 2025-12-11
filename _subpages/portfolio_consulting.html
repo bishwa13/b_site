@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Consulting Projects"
+permalink: /portfolio/consulting/
+---
+
+<h1>Consulting Projects</h1>
+<p>Consulting engagements and advisory work.</p>
+
+{% if site.categories.portfolio_consulting.size > 0 %}
+<ul class="portfolio-list">
+  {% for post in site.categories.portfolio_consulting %}
+    <li class="portfolio-item">
+      <a href="{{ post.url }}" class="portfolio-link">
+        <h3>{{ post.title }}</h3>
+        <span class="portfolio-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="portfolio-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No consulting projects listed yet.</p>
+{% endif %}

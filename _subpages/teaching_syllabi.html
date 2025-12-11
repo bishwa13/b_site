@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Syllabi"
+permalink: /teaching/syllabi/
+---
+
+<h1>Course Syllabi</h1>
+<p>Course syllabi and learning materials.</p>
+
+{% if site.categories.teaching_syllabi.size > 0 %}
+<ul class="teaching-list">
+  {% for post in site.categories.teaching_syllabi %}
+    <li class="teaching-item">
+      <a href="{{ post.url }}" class="teaching-link">
+        <h3>{{ post.title }}</h3>
+        <span class="teaching-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="teaching-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No syllabi listed yet.</p>
+{% endif %}

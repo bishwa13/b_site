@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Business Development"
+permalink: /portfolio/business/
+---
+
+<h1>Business Development</h1>
+<p>Business development projects and initiatives.</p>
+
+{% if site.categories.portfolio_business.size > 0 %}
+<ul class="portfolio-list">
+  {% for post in site.categories.portfolio_business %}
+    <li class="portfolio-item">
+      <a href="{{ post.url }}" class="portfolio-link">
+        <h3>{{ post.title }}</h3>
+        <span class="portfolio-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="portfolio-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No business development projects listed yet.</p>
+{% endif %}

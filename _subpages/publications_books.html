@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Books & Chapters"
+permalink: /publications/books/
+---
+
+<h1>Books & Chapters</h1>
+<p>Books and chapters contributed to edited volumes.</p>
+
+{% if site.categories.publications_books.size > 0 %}
+<ul class="publications-list">
+  {% for post in site.categories.publications_books %}
+    <li class="publication-item">
+      <a href="{{ post.url }}" class="publication-link">
+        <h3>{{ post.title }}</h3>
+        <span class="publication-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="publication-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No books or chapters published yet.</p>
+{% endif %}

@@ -57,6 +57,7 @@ yandex_site_verification :
 include:
   - .htaccess
   - _pages
+  - _subpages
   - files
   - _posts
 exclude:
@@ -92,27 +93,6 @@ keep_files:
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
-
-
-# These settings control the types of collections used by the template
-
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-  study-abroad:
-    output: true
-    permalink: /study-abroad/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -171,16 +151,6 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-
-  # _study-abroad
-  - scope:
-      path: ""
-      type: study-abroad
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
 
 
 

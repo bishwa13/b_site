@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Journal Articles"
+permalink: /publications/journals/
+---
+
+<h1>Journal Articles</h1>
+<p>Peer-reviewed journal publications and academic research.</p>
+
+{% if site.categories.publications_journals.size > 0 %}
+<ul class="publications-list">
+  {% for post in site.categories.publications_journals %}
+    <li class="publication-item">
+      <a href="{{ post.url }}" class="publication-link">
+        <h3>{{ post.title }}</h3>
+        <span class="publication-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="publication-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No journal articles published yet.</p>
+{% endif %}

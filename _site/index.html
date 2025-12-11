@@ -64,17 +64,23 @@
       ImBishwa
     </a>
 
-    <button class="jk-navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <button class="jk-navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-menu">
       <span class="jk-navbar-toggle-bar"></span>
       <span class="jk-navbar-toggle-bar"></span>
       <span class="jk-navbar-toggle-bar"></span>
     </button>
 
-    <ul class="jk-navbar-menu">
+    <ul class="jk-navbar-menu" id="navbar-menu">
       
       
         <li class="jk-navbar-item has-dropdown">
-          <a href="/study-abroad/" class="jk-navbar-link">
+          <a href="/study-abroad/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
             Study Abroad
             
               <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
@@ -82,10 +88,13 @@
           </a>
           
           
-            <ul class="jk-dropdown-menu">
+            <ul class="jk-dropdown-menu" role="menu">
               
-                <li class="jk-dropdown-item ">
-                  <a href="/study-abroad/services/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/study-abroad/services/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Services
                     
                   </a>
@@ -93,8 +102,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/study-abroad/guides/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/study-abroad/guides/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Application Guides
                     
                   </a>
@@ -102,8 +114,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/study-abroad/scholarships/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/study-abroad/scholarships/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Scholarships
                     
                   </a>
@@ -111,8 +126,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/study-abroad/packages/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/study-abroad/packages/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Packages & Fees
                     
                   </a>
@@ -125,7 +143,13 @@
         </li>
       
         <li class="jk-navbar-item has-dropdown">
-          <a href="/publications/" class="jk-navbar-link">
+          <a href="/publications/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
             Publications
             
               <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
@@ -133,10 +157,13 @@
           </a>
           
           
-            <ul class="jk-dropdown-menu">
+            <ul class="jk-dropdown-menu" role="menu">
               
-                <li class="jk-dropdown-item ">
-                  <a href="/publications/journals/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/publications/journals/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Journal Articles
                     
                   </a>
@@ -144,8 +171,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/publications/conferences/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/publications/conferences/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Conference Papers
                     
                   </a>
@@ -153,8 +183,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/publications/reports/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/publications/reports/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Reports & Policy Briefs
                     
                   </a>
@@ -162,8 +195,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/publications/books/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/publications/books/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Books & Chapters
                     
                   </a>
@@ -176,7 +212,13 @@
         </li>
       
         <li class="jk-navbar-item has-dropdown">
-          <a href="/talks/" class="jk-navbar-link">
+          <a href="/talks/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
             Talks
             
               <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
@@ -184,10 +226,13 @@
           </a>
           
           
-            <ul class="jk-dropdown-menu">
+            <ul class="jk-dropdown-menu" role="menu">
               
-                <li class="jk-dropdown-item ">
-                  <a href="/talks/workshops/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/talks/workshops/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Workshops
                     
                   </a>
@@ -195,8 +240,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/talks/lectures/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/talks/lectures/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Guest Lectures
                     
                   </a>
@@ -204,8 +252,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/talks/media/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/talks/media/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Media & Podcasts
                     
                   </a>
@@ -218,7 +269,13 @@
         </li>
       
         <li class="jk-navbar-item has-dropdown">
-          <a href="/teaching/" class="jk-navbar-link">
+          <a href="/teaching/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
             Teaching
             
               <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
@@ -226,10 +283,13 @@
           </a>
           
           
-            <ul class="jk-dropdown-menu">
+            <ul class="jk-dropdown-menu" role="menu">
               
-                <li class="jk-dropdown-item ">
-                  <a href="/teaching/courses/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/teaching/courses/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Courses
                     
                   </a>
@@ -237,8 +297,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/teaching/syllabi/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/teaching/syllabi/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Syllabi
                     
                   </a>
@@ -246,8 +309,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/teaching/supervision/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/teaching/supervision/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Supervision (Masters/PhD)
                     
                   </a>
@@ -260,7 +326,13 @@
         </li>
       
         <li class="jk-navbar-item has-dropdown">
-          <a href="/portfolio/" class="jk-navbar-link">
+          <a href="/portfolio/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
             Portfolio
             
               <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
@@ -268,10 +340,13 @@
           </a>
           
           
-            <ul class="jk-dropdown-menu">
+            <ul class="jk-dropdown-menu" role="menu">
               
-                <li class="jk-dropdown-item ">
-                  <a href="/portfolio/business/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/portfolio/business/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Business Development
                     
                   </a>
@@ -279,8 +354,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/portfolio/environment/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/portfolio/environment/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Environment Solutions
                     
                   </a>
@@ -288,8 +366,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/portfolio/consulting/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/portfolio/consulting/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Consulting Projects
                     
                   </a>
@@ -297,8 +378,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/portfolio/writing/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/portfolio/writing/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Creative Writing
                     
                   </a>
@@ -311,7 +395,13 @@
         </li>
       
         <li class="jk-navbar-item has-dropdown">
-          <a href="/year-archive/" class="jk-navbar-link">
+          <a href="/year-archive/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
             Blog Posts
             
               <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
@@ -319,10 +409,13 @@
           </a>
           
           
-            <ul class="jk-dropdown-menu">
+            <ul class="jk-dropdown-menu" role="menu">
               
-                <li class="jk-dropdown-item ">
-                  <a href="/blog/career/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/blog/career/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Career & Coaching
                     
                   </a>
@@ -330,8 +423,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/blog/research/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/blog/research/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Education & Research
                     
                   </a>
@@ -339,8 +435,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/blog/sustainability/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/blog/sustainability/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Sustainable Development
                     
                   </a>
@@ -353,7 +452,9 @@
         </li>
       
         <li class="jk-navbar-item ">
-          <a href="/cv/" class="jk-navbar-link">
+          <a href="/cv/" 
+             class="jk-navbar-link"
+             >
             CV
             
           </a>
@@ -362,7 +463,13 @@
         </li>
       
         <li class="jk-navbar-item has-dropdown">
-          <a href="/projects/" class="jk-navbar-link">
+          <a href="/projects/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
             Projects
             
               <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
@@ -370,10 +477,13 @@
           </a>
           
           
-            <ul class="jk-dropdown-menu">
+            <ul class="jk-dropdown-menu" role="menu">
               
-                <li class="jk-dropdown-item ">
-                  <a href="/projects/active/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/projects/active/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Active Projects
                     
                   </a>
@@ -381,8 +491,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/projects/completed/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/projects/completed/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Completed Projects
                     
                   </a>
@@ -390,8 +503,11 @@
                   
                 </li>
               
-                <li class="jk-dropdown-item ">
-                  <a href="/projects/funded/" class="jk-dropdown-link">
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/projects/funded/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
                     Funded Research
                     
                   </a>
@@ -405,6 +521,9 @@
       
     </ul>
   </div>
+  
+  <!-- Mobile overlay -->
+  <div class="jk-navbar-overlay" aria-hidden="true"></div>
 </nav>
   
   <!-- Main Content -->
@@ -455,6 +574,66 @@
             </div>
             <time class="jk-post-date" datetime="2025-11-24T04:15:00+00:00">
               November 24, 2025
+            </time>
+          </li>
+        
+          <li class="jk-post-item" data-animate="jk-fade-in-up">
+            <div>
+              <a href="/study-abroad/guides/canada/" class="jk-post-link">
+                Canada Application Guide
+              </a>
+              
+                <div class="jk-post-meta">
+                  
+                    <span class="jk-badge jk-badge-primary">applications_guides</span>
+                  
+                    <span class="jk-badge jk-badge-primary">study_abroad</span>
+                  
+                </div>
+              
+            </div>
+            <time class="jk-post-date" datetime="2025-03-15T00:00:00+00:00">
+              March 15, 2025
+            </time>
+          </li>
+        
+          <li class="jk-post-item" data-animate="jk-fade-in-up">
+            <div>
+              <a href="/study-abroad/guides/uk/" class="jk-post-link">
+                UK Application Guide
+              </a>
+              
+                <div class="jk-post-meta">
+                  
+                    <span class="jk-badge jk-badge-primary">applications_guides</span>
+                  
+                    <span class="jk-badge jk-badge-primary">study_abroad</span>
+                  
+                </div>
+              
+            </div>
+            <time class="jk-post-date" datetime="2025-03-01T00:00:00+00:00">
+              March 01, 2025
+            </time>
+          </li>
+        
+          <li class="jk-post-item" data-animate="jk-fade-in-up">
+            <div>
+              <a href="/study-abroad/guides/australia/" class="jk-post-link">
+                Australia Application Guide
+              </a>
+              
+                <div class="jk-post-meta">
+                  
+                    <span class="jk-badge jk-badge-primary">applications_guides</span>
+                  
+                    <span class="jk-badge jk-badge-primary">study_abroad</span>
+                  
+                </div>
+              
+            </div>
+            <time class="jk-post-date" datetime="2025-02-20T00:00:00+00:00">
+              February 20, 2025
             </time>
           </li>
         

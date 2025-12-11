@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Conference Papers"
+permalink: /publications/conferences/
+---
+
+<h1>Conference Papers</h1>
+<p>Papers and presentations delivered at academic conferences.</p>
+
+{% if site.categories.publications_conferences.size > 0 %}
+<ul class="publications-list">
+  {% for post in site.categories.publications_conferences %}
+    <li class="publication-item">
+      <a href="{{ post.url }}" class="publication-link">
+        <h3>{{ post.title }}</h3>
+        <span class="publication-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="publication-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No conference papers published yet.</p>
+{% endif %}

@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Funded Research"
+permalink: /projects/funded/
+---
+
+<h1>Funded Research</h1>
+<p>Research projects with external funding and grants.</p>
+
+{% if site.categories.projects_funded.size > 0 %}
+<ul class="projects-list">
+  {% for post in site.categories.projects_funded %}
+    <li class="project-item">
+      <a href="{{ post.url }}" class="project-link">
+        <h3>{{ post.title }}</h3>
+        <span class="project-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="project-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No funded research projects listed yet.</p>
+{% endif %}

@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Completed Projects"
+permalink: /projects/completed/
+---
+
+<h1>Completed Projects</h1>
+<p>Finished research and professional projects.</p>
+
+{% if site.categories.projects_completed.size > 0 %}
+<ul class="projects-list">
+  {% for post in site.categories.projects_completed %}
+    <li class="project-item">
+      <a href="{{ post.url }}" class="project-link">
+        <h3>{{ post.title }}</h3>
+        <span class="project-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="project-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No completed projects listed yet.</p>
+{% endif %}

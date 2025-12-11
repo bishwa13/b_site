@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Scholarships"
+permalink: /study-abroad/scholarships/
+---
+
+<h1>Scholarships</h1>
+<p>Scholarship opportunities for international students.</p>
+
+{% if site.categories.study_abroad_scholarships.size > 0 %}
+<ul class="scholarships-list">
+  {% for post in site.categories.study_abroad_scholarships %}
+    <li class="scholarship-item">
+      <a href="{{ post.url }}" class="scholarship-link">
+        <h3>{{ post.title }}</h3>
+        <span class="scholarship-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="scholarship-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No scholarships listed yet.</p>
+{% endif %}

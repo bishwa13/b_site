@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Creative Writing"
+permalink: /portfolio/writing/
+---
+
+<h1>Creative Writing</h1>
+<p>Creative writing samples and published works.</p>
+
+{% if site.categories.portfolio_writing.size > 0 %}
+<ul class="portfolio-list">
+  {% for post in site.categories.portfolio_writing %}
+    <li class="portfolio-item">
+      <a href="{{ post.url }}" class="portfolio-link">
+        <h3>{{ post.title }}</h3>
+        <span class="portfolio-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="portfolio-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No creative writing samples listed yet.</p>
+{% endif %}

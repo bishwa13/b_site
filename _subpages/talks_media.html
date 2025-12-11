@@ -1,0 +1,26 @@
+---
+layout: page
+title: "Media & Podcasts"
+permalink: /talks/media/
+---
+
+<h1>Media & Podcasts</h1>
+<p>Media appearances, podcast interviews, and broadcast appearances.</p>
+
+{% if site.categories.talks_media.size > 0 %}
+<ul class="talks-list">
+  {% for post in site.categories.talks_media %}
+    <li class="talk-item">
+      <a href="{{ post.url }}" class="talk-link">
+        <h3>{{ post.title }}</h3>
+        <span class="talk-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </a>
+      {% if post.excerpt %}
+        <p class="talk-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No media appearances listed yet.</p>
+{% endif %}
