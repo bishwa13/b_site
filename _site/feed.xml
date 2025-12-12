@@ -1,56 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-11T20:08:21+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ImBishwa</title><subtitle>This is my official personal site, where I put my thoughts, learning and whatever I want. Its not me, its my progress.</subtitle><entry><title type="html">Welcome to My Jekyll Site</title><link href="http://localhost:4000/blog/2025/11/24/welcome-to-the-blog.html" rel="alternate" type="text/html" title="Welcome to My Jekyll Site" /><published>2025-11-24T04:15:00+00:00</published><updated>2025-11-24T04:15:00+00:00</updated><id>http://localhost:4000/blog/2025/11/24/welcome-to-the-blog</id><content type="html" xml:base="http://localhost:4000/blog/2025/11/24/welcome-to-the-blog.html"><![CDATA[<p>Welcome to my new Jekyll-powered website! This is a sample blog post to demonstrate the posting functionality.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-12T10:28:27+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">ImBishwa</title><subtitle>This is my official personal site, where I put my thoughts, learning and whatever I want. Its not me, its my progress.</subtitle><entry><title type="html">Welcome to My Personal Site</title><link href="http://localhost:4000/blog/2025/11/24/welcome-to-the-blog.html" rel="alternate" type="text/html" title="Welcome to My Personal Site" /><published>2025-11-24T04:15:00+00:00</published><updated>2025-11-24T04:15:00+00:00</updated><id>http://localhost:4000/blog/2025/11/24/welcome-to-the-blog</id><content type="html" xml:base="http://localhost:4000/blog/2025/11/24/welcome-to-the-blog.html"><![CDATA[<p>Hello, People</p>
 
-<h2 id="getting-started">Getting Started</h2>
+<p>I’m thrilled to have you here! This is the beginning of my journey to share my thoughts, experiences, and projects with you. Stay tuned for updates as I continue to build and grow this space.</p>
 
-<p>To create new posts, simply add markdown files to the <code class="language-plaintext highlighter-rouge">_posts</code> directory following the naming convention:</p>
+<p>I’m excited to connect with you and explore new ideas together. Feel free to reach out if you have any questions or just want to say hello!</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>YYYY-MM-DD-title.md
-</code></pre></div></div>
+<p>Happy Connecting! 🎉</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Hello, People]]></summary></entry><entry><title type="html">Thesis Formatting Guidelines of College of Applied Sciences-Nepal</title><link href="http://localhost:4000/teaching/courses/2025-Thesis-Format-CAS-Nepal" rel="alternate" type="text/html" title="Thesis Formatting Guidelines of College of Applied Sciences-Nepal" /><published>2025-08-20T00:00:00+00:00</published><updated>2025-08-20T00:00:00+00:00</updated><id>http://localhost:4000/teaching/courses/Thesis_writing_guidelines_of_CAS</id><content type="html" xml:base="http://localhost:4000/teaching/courses/2025-Thesis-Format-CAS-Nepal"><![CDATA[<p>This document outlines the essential guidelines for formatting your thesis at the College of Applied Sciences-Nepal. Adhering to these guidelines is crucial for ensuring consistency, clarity, and professionalism in your academic work. The guidelines presented here reflect the standard academic practices adopted by Tribhuvan University and are designed to help students produce high-quality research documents.</p>
 
-<h2 id="features">Features</h2>
+<h2 id="purpose-of-these-guidelines">Purpose of These Guidelines</h2>
 
-<p>This site includes:</p>
-
+<p>These formatting guidelines serve multiple purposes:</p>
 <ul>
-  <li><strong>Multi-level navigation</strong> with dropdown menus</li>
-  <li><strong>Responsive design</strong> that works on all devices</li>
-  <li><strong>Blog functionality</strong> with categorized posts</li>
-  <li><strong>SEO optimization</strong> with meta tags</li>
-  <li><strong>Fast loading</strong> with minimal dependencies</li>
+  <li>Ensure uniformity across all theses submitted to the college</li>
+  <li>Facilitate clear communication of research findings</li>
+  <li>Meet international academic standards</li>
+  <li>Simplify the review process for evaluators</li>
+  <li>Prepare students for scholarly publication</li>
 </ul>
 
-<h2 id="writing-posts">Writing Posts</h2>
+<h2 id="who-should-use-these-guidelines">Who Should Use These Guidelines</h2>
 
-<p>Posts are written in Markdown format. You can include:</p>
-
+<p>These guidelines are mandatory for:</p>
 <ul>
-  <li>Headers</li>
-  <li>Lists</li>
-  <li>Code blocks</li>
-  <li>Links and images</li>
-  <li>And much more!</li>
+  <li>Master’s degree students preparing their thesis</li>
+  <li>Research scholars working on dissertations</li>
+  <li>Faculty members supervising research work</li>
+  <li>External researchers collaborating with CAS-Nepal</li>
 </ul>
 
-<h3 id="code-example">Code Example</h3>
+<h2 id="key-areas-covered">Key Areas Covered</h2>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"Hello from Jekyll!"</span><span class="p">)</span>
-    
-<span class="n">hello_world</span><span class="p">()</span>
-</code></pre></div></div>
+<p>The document provides detailed instructions for:</p>
+<ul>
+  <li>Document formatting and layout</li>
+  <li>Citation and referencing styles</li>
+  <li>Chapter organization</li>
+  <li>Figure and table presentations</li>
+  <li>Appendix formatting</li>
+  <li>Front and back matter preparation</li>
+</ul>
 
-<h2 id="whats-next">What’s Next?</h2>
+<p>Following these guidelines will ensure your thesis meets the academic standards expected by the College of Applied Sciences-Nepal and contributes to</p>
 
-<p>Start customizing your site by:</p>
+<p><a href="/files/cas_msc_thesis_format.pdf" target="_blank" rel="noopener">📄 Download College of Applied Sciences‑Nepal Thesis Formatting Guidelines (PDF)</a></p>]]></content><author><name></name></author><category term="teaching_courses" /><category term="teaching" /><summary type="html"><![CDATA[This document outlines the essential guidelines for formatting your thesis at the College of Applied Sciences-Nepal. Adhering to these guidelines is crucial for ensuring consistency, clarity, and professionalism in your academic work. The guidelines presented here reflect the standard academic practices adopted by Tribhuvan University and are designed to help students produce high-quality research documents.]]></summary></entry><entry><title type="html">Impact of Climate Variability on Agricultural Productivity and Food Securityin Banke, Nepal: Insights from 1990-2020</title><link href="http://localhost:4000/publication/2025-07-10-Impact-of-climate-variability-on-agricultural-productivity-and-Food-security-in-Banke-Nepal-Insight-from-1990-2020" rel="alternate" type="text/html" title="Impact of Climate Variability on Agricultural Productivity and Food Securityin Banke, Nepal: Insights from 1990-2020" /><published>2025-04-14T00:00:00+00:00</published><updated>2025-04-14T00:00:00+00:00</updated><id>http://localhost:4000/publication/Impact-of-climate-variability-on-agricultural-productivity-and-Food-security-in-Banke-Nepal-Insight-from-1990-2020</id><content type="html" xml:base="http://localhost:4000/publication/2025-07-10-Impact-of-climate-variability-on-agricultural-productivity-and-Food-security-in-Banke-Nepal-Insight-from-1990-2020"><![CDATA[<h2 id="-title-how-climate-change-is-quietly-reshaping-agriculture-in-banke-nepal">🌿 Title: How Climate Change is Quietly Reshaping Agriculture in Banke, Nepal</h2>
 
-<ol>
-  <li>Editing <code class="language-plaintext highlighter-rouge">_config.yml</code> with your information</li>
-  <li>Adding more posts to <code class="language-plaintext highlighter-rouge">_posts/</code></li>
-  <li>Creating pages for your navigation items</li>
-  <li>Customizing the CSS in <code class="language-plaintext highlighter-rouge">assets/css/main.css</code></li>
-</ol>
+<ul>
+  <li>By Bishwa Prakash Puri - <a href="https://oaskpublishers.com/assets/article-pdf/impact-of-climate-variability-on-agricultural-productivity-and-food-security--in-banke-nepal-insights-from-1990-2020.pdf"><strong>Read full paper:</strong> 📖</a></li>
+</ul>
 
-<p>Happy blogging! 🎉</p>]]></content><author><name></name></author><category term="blog" /><summary type="html"><![CDATA[Welcome to my new Jekyll-powered website! This is a sample blog post to demonstrate the posting functionality.]]></summary></entry><entry><title type="html">Canada Application Guide</title><link href="http://localhost:4000/study-abroad/guides/canada/" rel="alternate" type="text/html" title="Canada Application Guide" /><published>2025-03-15T00:00:00+00:00</published><updated>2025-03-15T00:00:00+00:00</updated><id>http://localhost:4000/study-abroad/guides/canada-application-guide</id><content type="html" xml:base="http://localhost:4000/study-abroad/guides/canada/"><![CDATA[<h2 id="overview">Overview</h2>
+<p>Banke, located in Nepal’s southern plains, may not often make headlines, but it represents a critical front line in the country’s battle with climate change. My recent research, conducted with colleagues over a 30-year span (1990–2020), delves into how subtle shifts in climate are impacting the region’s food systems—and what we must do about it.</p>
+
+<h3 id="️-climate-is-changingquietly-but-surely">🌡️ Climate Is Changing—Quietly But Surely</h3>
+<p>The data tells a story of slow but steady change: a minor temperature increase of about 0.0946°C per year, a significant rise in sunshine hours (15.15 hours annually), and a modest bump in yearly rainfall. At first glance, these numbers may not seem alarming. But when you’re a farmer relying on rainfed fields and seasonal rainfall patterns, even small changes can make or break a harvest.</p>
+
+<h3 id="️-sunshine-mattersmore-than-you-might-think">☀️ Sunshine Matters—More Than You Might Think</h3>
+<p>Interestingly, our study found that sunshine hours had the strongest positive impact on crop yield (r = 0.417). More sun means better photosynthesis, which translates to higher productivity. In contrast, rainfall and temperature did not show a strong or statistically significant influence on yields.</p>
+
+<p>This finding has important implications: while we often worry about rainfall variability, solar radiation could be a more consistent and predictive driver of agricultural outcomes in regions like Banke.</p>
+
+<h3 id="-farming-practicesa-system-under-stress">🚜 Farming Practices—A System Under Stress</h3>
+<p>Despite producing enough food overall, Banke’s agricultural system is alarmingly fragile. Farmers predominantly rely on monoculture (growing the same crop repeatedly), with minimal crop diversification and limited institutional support. The vast majority of farmland—over 93%—depends solely on rainfall for irrigation.</p>
+
+<p>But there’s a silver lining. Fields with year-round irrigation showed significantly higher yields—nearly 44% more than rainfed fields. This points to a clear opportunity: expanding irrigation infrastructure could be a game-changer for food security in the region.</p>
+
+<h3 id="️-farmers-are-adaptingbut-they-need-help">🕰️ Farmers Are Adapting—but They Need Help</h3>
+<p>Farmers aren’t passive observers. They’ve begun shifting crop calendars—delaying sowing and harvesting in response to unpredictable monsoons. Yet, these grassroots adaptations need to be supported by broader institutional frameworks, including access to better technologies, subsidies for irrigation systems, and training on climate-resilient farming practices.</p>
+
+<h3 id="-the-way-forward">🌱 The Way Forward</h3>
+<p>If Nepal is serious about safeguarding food security and protecting rural livelihoods, it must adopt integrated climate-resilient strategies. These should include:</p>
+
+<ul>
+  <li>
+    <p>🚿 Improved irrigation systems</p>
+  </li>
+  <li>
+    <p>🌾 Diversified cropping patterns</p>
+  </li>
+  <li>
+    <p>🏛️ Stronger institutional and policy support</p>
+  </li>
+</ul>
+
+<p>The sun may be shining more in Banke—but without timely action, its potential to boost agricultural prosperity may fade in the heat of climate uncertainty.</p>]]></content><author><name></name></author><category term="publications" /><category term="publications_journals" /><category term="manuscripts" /><summary type="html"><![CDATA[Nepal’s climate diversity presents complex challenges for its agrarian communities, particularly in regions like Banke where agriculture is highly sensitive to climatic shifts. This study analyzed the period 1990–2020 in Janaki Rural Municipality and found a minor but steady rise in temperature (0.0946°C/year), a significant increase in sunshine hours (15.15 hours/year), and a modest rise in annual rainfall (1.94 mm/year). Statistical analysis showed that sunshine hours were significantly correlated with crop yields (r = 0.417, p = 0.017), while temperature and rainfall were not. Despite adequate overall food production, the district suffers from high dependence on monoculture, rainfed irrigation (93.3%), and limited institutional support. Year-round irrigation markedly improved productivity (7868.63 kg/ha vs. 5450.43 kg/ha). These findings underscore the urgent need for integrated, climate-resilient agricultural strategies to ensure long-term food security in Nepal’s lowland regions....]]></summary></entry><entry><title type="html">Canada Application Guide</title><link href="http://localhost:4000/study-abroad/guides/canada/" rel="alternate" type="text/html" title="Canada Application Guide" /><published>2025-03-15T00:00:00+00:00</published><updated>2025-03-15T00:00:00+00:00</updated><id>http://localhost:4000/study-abroad/guides/canada-application-guide</id><content type="html" xml:base="http://localhost:4000/study-abroad/guides/canada/"><![CDATA[<h2 id="overview">Overview</h2>
 
 <p>Canada offers world-class education and excellent quality of life for international students. This guide covers everything you need to know about applying to Canadian universities.</p>
 
@@ -529,4 +559,303 @@ International: School-based counselling, stricter regulations, holistic support.
   <li>Supports students’ academic and personal growth, benefiting Nepal’s global reputation.</li>
 </ul>
 
-<hr />]]></content><author><name></name></author><category term="study_abroad_services" /><category term="study_abroad" /><summary type="html"><![CDATA[Counselling helps students make informed decisions about study choices, university applications, visas and career planning — especially critical for those planning to study abroad.]]></summary></entry></feed>
+<hr />]]></content><author><name></name></author><category term="study_abroad_services" /><category term="study_abroad" /><summary type="html"><![CDATA[Counselling helps students make informed decisions about study choices, university applications, visas and career planning — especially critical for those planning to study abroad.]]></summary></entry><entry><title type="html">Introduction to Land Use Land Cover (LULC) Maps</title><link href="http://localhost:4000/teaching/courses/2024-lulc" rel="alternate" type="text/html" title="Introduction to Land Use Land Cover (LULC) Maps" /><published>2024-12-24T00:00:00+00:00</published><updated>2024-12-24T00:00:00+00:00</updated><id>http://localhost:4000/teaching/courses/Land_cover_arcgis</id><content type="html" xml:base="http://localhost:4000/teaching/courses/2024-lulc"><![CDATA[<p>The terms <em>land use</em> and <em>land cover</em> are often used interchangeably, but each has its own distinct meaning. <em>Land cover</em> refers to the physical material found on the Earth’s surface, such as vegetation, urban infrastructure, water bodies, and bare soil. Identifying land cover forms the foundation for activities like thematic mapping and change detection analysis. On the other hand, <em>land use</em> refers to the purpose or function of the land, such as agriculture, wildlife habitat, recreation, or urban development.</p>
+
+<p>When combined, the term <em>Land Use/Land Cover</em> (LULC) generally refers to the categorization or classification of both human activities and natural elements on the landscape, within a specified time frame. This classification is based on scientific and statistical methods using relevant source materials.</p>
+
+<h3 id="land-cover-vs-land-use">Land Cover vs. Land Use</h3>
+
+<p>Land cover is the physical material on the surface of the Earth, while land use describes how humans utilize the land for socio-economic activities. Both are crucial in understanding the environment, managing natural resources, and making informed decisions about urban planning, resource management, and conservation efforts.</p>
+
+<h3 id="why-do-we-need-lulc-maps">Why Do We Need LULC Maps?</h3>
+
+<p>LULC maps play a vital role in planning, management, and monitoring programs at local, regional, and national levels. They are essential tools for understanding land utilization and can inform the creation of policies and programs necessary for sustainable development. These maps provide insight into the land’s current condition, helping stakeholders make informed decisions about land use and environmental protection.</p>
+
+<p>For instance, ensuring sustainable urban development and curbing the haphazard expansion of cities requires an understanding of the current and past land use/land cover patterns. This can help authorities design planning models that maximize the use of available land in the most rational and optimal manner. By examining LULC maps, we can track changes in ecosystems and environmental conditions, which are critical for developing policies aimed at environmental conservation.</p>
+
+<h4 id="example-change-detection">Example: Change Detection</h4>
+
+<p>A common application of LULC maps is change detection, which compares the land cover of a specific area at two different points in time. This can reveal patterns of urban sprawl, deforestation, agricultural expansion, and other environmental changes.</p>
+
+<h3 id="lulc-classification">LULC Classification</h3>
+
+<p>LULC classification is one of the most widely used applications of remote sensing. The two most common approaches for classification are:</p>
+
+<h4 id="1-unsupervised-classification">1. <strong>Unsupervised Classification</strong></h4>
+
+<p>In this method, software analyzes the image without requiring the user to provide sample classes. The software groups pixels with common characteristics into classes using algorithms. The user specifies the number of output classes, but the software determines the classification.</p>
+
+<p><strong>Steps Involved:</strong></p>
+
+<ul>
+  <li>The image is segmented based on its spectral properties.</li>
+  <li>Pixels are grouped into clusters, and the software assigns a class label.</li>
+</ul>
+
+<h4 id="2-supervised-classification">2. <strong>Supervised Classification</strong></h4>
+
+<p>In supervised classification, the user selects sample pixels that represent specific classes (such as forests, wetlands, or urban areas) and guides the software to classify all other pixels in the image. The user also sets the bounds for how similar other pixels must be to those training sites.</p>
+
+<p><strong>Steps Involved:</strong></p>
+
+<ul>
+  <li>Select training areas (representative pixels of specific land classes).</li>
+  <li>Specify spectral properties (e.g., reflectance in different bands).</li>
+  <li>The software uses the training sites to classify all pixels in the image.</li>
+</ul>
+
+<h3 id="types-of-lulc-classes">Types of LULC Classes</h3>
+
+<p>Here are some of the common LULC classes that are typically used in mapping:</p>
+
+<ol>
+  <li><strong>Urban or Built-up Land</strong>: Residential, commercial, industrial, and mixed-use areas.</li>
+  <li><strong>Agricultural Land</strong>: Cropland, pasture, orchards, and horticultural areas.</li>
+  <li><strong>Rangeland</strong>: Herbaceous, shrub, and mixed rangelands.</li>
+  <li><strong>Forest Land</strong>: Deciduous, evergreen, and mixed forests.</li>
+  <li><strong>Water</strong>: Rivers, lakes, reservoirs, bays, and estuaries.</li>
+  <li><strong>Wetland</strong>: Forested wetlands and non-forested wetlands.</li>
+  <li><strong>Barren Land</strong>: Dry salt flats, beaches, sandy areas, and exposed rock.</li>
+  <li><strong>Transitional Areas</strong>: Areas in transition between land types.</li>
+  <li><strong>Perennial Snow or Ice</strong>: Snowfields and glaciers.</li>
+</ol>
+
+<h3 id="geospatial-data-and-lulc">Geospatial Data and LULC</h3>
+
+<p>With advancements in remote sensing and geographic information systems (GIS), the availability of spatial data has increased significantly. Geospatial data now includes not only LULC maps but also attributes such as socioeconomic data, environmental conditions, and more.</p>
+
+<p>Remote sensing, particularly through the use of satellite imagery, provides valuable, real-time information about vegetation growth, which can be quantified using indices like the <em>Normalized Difference Vegetation Index (NDVI)</em>. NDVI uses reflectance data from visible (red) and near-infrared (NIR) bands to assess the health and density of vegetation over large areas.</p>
+
+<h3 id="applications-of-lulc-maps">Applications of LULC Maps</h3>
+
+<p>LULC maps have diverse applications across many fields, including:</p>
+
+<ol>
+  <li><strong>Natural Resource Management</strong>: Monitoring and managing forests, wetlands, water resources, and soil.</li>
+  <li><strong>Wildlife Habitat Protection</strong>: Identifying and protecting critical habitats.</li>
+  <li><strong>Baseline Mapping for GIS Input</strong>: Providing a foundational dataset for further geographic analysis.</li>
+  <li><strong>Urban Expansion / Encroachment</strong>: Tracking the growth of urban areas and the encroachment on natural resources.</li>
+  <li><strong>Routing and Logistics Planning</strong>: Aiding in planning for infrastructure development, such as roads and utilities.</li>
+  <li><strong>Damage Delineation</strong>: Mapping damage from natural disasters such as floods, fires, or tornadoes.</li>
+  <li><strong>Legal Boundaries</strong>: Assisting with tax assessment and property boundary delineation.</li>
+</ol>
+
+<h3 id="summary">Summary</h3>
+
+<p>Land Use/Land Cover (LULC) mapping is crucial for understanding and managing both natural resources and human activities. It provides a comprehensive categorization of the physical land cover and how it is used, which helps guide policies for sustainable development. LULC maps are generated through various classification methods, such as unsupervised and supervised classification, and have broad applications in fields like urban planning, resource management, and disaster response.</p>
+
+<p>As the availability of geospatial data grows, the importance of LULC maps will continue to rise, making them essential tools for making informed decisions about the environment and land use planning.</p>
+
+<p>Example Project:</p>
+
+<p>This project is for Balkhu Basin:</p>
+
+<p><a href="/files/Balkhu_landsat.rar">Raster file (Download..📥)</a></p>
+
+<p><a href="/files/Balkhu_boundary.rar">Boundary file.shp (Download..📥)</a></p>
+
+<p><a href="https://drive.google.com/file/d/1lGcnJG5dxSWJbeZerPNlJzvqu0WOUsap/view?usp=drive_link">Whole Kathmandu valley landsat files ((Download..📥))</a></p>]]></content><author><name></name></author><category term="teaching_courses" /><category term="teaching" /><summary type="html"><![CDATA[The terms land use and land cover are often used interchangeably, but each has its own distinct meaning. Land cover refers to the physical material found on the Earth’s surface, such as vegetation, urban infrastructure, water bodies, and bare soil. Identifying land cover forms the foundation for activities like thematic mapping and change detection analysis. On the other hand, land use refers to the purpose or function of the land, such as agriculture, wildlife habitat, recreation, or urban development.]]></summary></entry><entry><title type="html">A Comprehensive Overview of Statistical Downscaling Model (SDSM)</title><link href="http://localhost:4000/teaching/courses/2024-Comprehensive-Overview-of-SDSM" rel="alternate" type="text/html" title="A Comprehensive Overview of Statistical Downscaling Model (SDSM)" /><published>2024-12-20T00:00:00+00:00</published><updated>2024-12-20T00:00:00+00:00</updated><id>http://localhost:4000/teaching/courses/Comprehensive_overview_sdsm</id><content type="html" xml:base="http://localhost:4000/teaching/courses/2024-Comprehensive-Overview-of-SDSM"><![CDATA[<p><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>
+As greenhouse gas concentrations continue to rise, General Circulation Models (GCMs) predict significant changes in climate on global and regional scales. However, these models leave an important question unanswered: <strong>How will climate change impact specific locations?</strong> Addressing this uncertainty requires a technique known as <strong>downscaling</strong>—a process that transforms the broad insights provided by GCMs into actionable, localized data.</p>
+
+<p>Let’s dives into statistical downscaling, the Statistical DownScaling Model (SDSM), and why these methods are indispensable for understanding climate impacts at the local level.</p>
+
+<hr />
+
+<h2 id="the-need-for-downscaling">The Need for Downscaling</h2>
+
+<h3 id="why-not-just-use-gcms">Why Not Just Use GCMs?</h3>
+
+<p>GCMs are complex mathematical representations of the atmosphere, ocean, and land processes. While they provide critical insights into global climate dynamics, their coarse spatial resolution—approximately 200 kilometers—limits their ability to account for finer-scale geographical features like mountains, valleys, and coastlines.</p>
+
+<p>For smaller regions or specific sites, such as islands or urban areas, GCMs fail to provide the detailed information needed for impact assessments. Hence, <strong>downscaling</strong> is employed to derive high-resolution climate data, enabling local-scale insights and applications.</p>
+
+<hr />
+
+<h2 id="what-is-statistical-downscaling">What is Statistical Downscaling?</h2>
+
+<p>Statistical downscaling involves establishing quantitative relationships between large-scale atmospheric variables (predictors) provided by GCMs and local-scale weather or climate variables (predictands). This approach is particularly useful for point-specific locations, where the focus is on daily surface weather variables like temperature, precipitation, and humidity.</p>
+
+<p><strong>Key Features of Statistical Downscaling</strong>:</p>
+
+<ul>
+  <li><strong>Focus</strong>: Local-scale weather derived from regional atmospheric data.</li>
+  <li><strong>Purpose</strong>: Address the limitations of GCMs for site-specific impact studies.</li>
+  <li><strong>Output</strong>: High-resolution climate projections tailored for individual sites or small regions.</li>
+</ul>
+
+<hr />
+
+<h2 id="introducing-the-statistical-downscaling-model-sdsm">Introducing the Statistical DownScaling Model (SDSM)</h2>
+
+<p>SDSM is a statistical downscaling tool designed to generate localized, daily surface weather scenarios under current and future regional climate conditions. It is widely used for producing low-cost, single-site climate projections that are essential for studies in hydrology, agriculture, urban planning, and disaster management.</p>
+
+<h3 id="what-can-sdsm-do">What Can SDSM Do?</h3>
+
+<ul>
+  <li><strong>Rapid Scenario Development</strong>: Create multiple localized climate scenarios quickly and efficiently.</li>
+  <li><strong>Predictor Pre-Screening</strong>: Identify the most relevant large-scale climate variables for the study area.</li>
+  <li><strong>Model Calibration</strong>: Build statistical relationships between predictors and predictands using historical climate data.</li>
+  <li><strong>Diagnostic Testing</strong>: Perform basic statistical tests to evaluate the accuracy and reliability of the model.</li>
+  <li><strong>Data Visualization</strong>: Generate graphs and statistical summaries for interpreting and presenting results.</li>
+</ul>
+
+<hr />
+
+<h2 id="statistical-vs-dynamical-downscaling">Statistical vs. Dynamical Downscaling</h2>
+
+<p>Downscaling can be categorized into two main types:</p>
+
+<h3 id="1-statistical-downscaling">1. <strong>Statistical Downscaling</strong></h3>
+
+<ul>
+  <li>Focuses on specific point locations.</li>
+  <li>Develops relationships between large-scale predictors and local weather outcomes.</li>
+  <li>Relatively inexpensive and computationally efficient.</li>
+</ul>
+
+<h3 id="2-dynamical-downscaling">2. <strong>Dynamical Downscaling</strong></h3>
+
+<ul>
+  <li>Uses Regional Climate Models (RCMs) to simulate physical processes at higher resolutions (10–50 km).</li>
+  <li>Suitable for regional-scale studies but requires significant computational resources.</li>
+</ul>
+
+<p>While both methods have their advantages, statistical downscaling remains popular for single-site studies due to its simplicity and cost-effectiveness.</p>
+
+<hr />
+
+<h2 id="why-use-sdsm">Why Use SDSM?</h2>
+
+<p>SDSM stands out because it provides a practical, user-friendly framework for downscaling. Here’s why it’s widely adopted:</p>
+
+<ol>
+  <li><strong>Localized Projections</strong>: Offers detailed insights into site-specific climate changes, critical for decision-making.</li>
+  <li><strong>Cost-Effective</strong>: Requires fewer resources compared to dynamical downscaling.</li>
+  <li><strong>Flexibility</strong>: Can be tailored to a wide range of applications, from water resource management to agriculture.</li>
+  <li><strong>Time-Efficiency</strong>: Enables researchers to produce projections quickly, even for complex scenarios.</li>
+</ol>
+
+<hr />
+
+<h2 id="applications-of-sdsm">Applications of SDSM</h2>
+
+<ul>
+  <li><strong>Hydrology</strong>: Predicting river flow and water resource availability under changing climate conditions.</li>
+  <li><strong>Agriculture</strong>: Assessing the impacts of altered precipitation and temperature on crop yields.</li>
+  <li><strong>Urban Planning</strong>: Designing resilient infrastructure to withstand extreme weather events.</li>
+  <li><strong>Disaster Management</strong>: Preparing for floods, droughts, and other climate-related disasters.</li>
+</ul>
+
+<hr />
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+
+<p>Downscaling is a critical step in making global climate models relevant for local impact assessments. SDSM provides a cost-effective and user-friendly solution to translate large-scale climate data into actionable insights for policymakers, researchers, and practitioners.</p>
+
+<p>As climate change continues to pose challenges at every scale, tools like SDSM empower communities to build resilience and adapt to an uncertain future.</p>
+
+<hr />
+
+<h2 id="download-and-install-sdsm">Download and Install SDSM</h2>
+
+<ol>
+  <li>
+    <p><strong>Download SDSM</strong></p>
+
+    <ul>
+      <li>Visit the official SDSM website and download the latest version (scroll down and download <strong>4.2</strong> for this practical session).<br />
+  👉 <a href="https://sdsm.org.uk/software.html">Download SDSM here 📥</a></li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Extract the Installation Files</strong></p>
+
+    <ul>
+      <li>Once the zip file is downloaded, extract its contents to a folder on your computer.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Run the Installer</strong></p>
+
+    <ul>
+      <li>Open the extracted folder and double-click on the <strong>setup file</strong> to begin installation.</li>
+      <li>If the installer shows an error or a message saying it “cannot install,” click <strong>OK</strong> to continue.<br />
+  ⚠️ <strong>Important</strong>: Do not click on “Exit Setup.” Instead, proceed as follows:</li>
+      <li>Look for the computer icon in the setup window and click it.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Complete Installation</strong></p>
+
+    <ul>
+      <li>Click on <strong>Continue</strong> to finish the installation process.</li>
+      <li>After installation, locate the SDSM shortcut on your desktop or in your program files to launch the application.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="download-predictor-variables">Download Predictor Variables</h2>
+
+<p>Predictor variables are critical for running SDSM as they provide the large-scale atmospheric data required for downscaling.</p>
+
+<ol>
+  <li>
+    <p><strong>Access Predictor Data</strong></p>
+
+    <ul>
+      <li>Go to the <strong>Climate Scenarios Canada</strong> website:<br />
+  👉 <a href="https://climate-scenarios.canada.ca/?page=pred-canesm2">Retrieve Predictor Data Here 📥</a></li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Input Location Details</strong></p>
+
+    <ul>
+      <li>Specify the longitude and latitude of your location in the form provided or choose your location on the map.
+        <ul>
+          <li><strong>Example</strong>:
+            <ul>
+              <li>Location: <strong>Surkhet (Birendranagar)</strong></li>
+              <li><strong>Longitude</strong>: 81.64</li>
+              <li><strong>Latitude</strong>: 28.59</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Retrieve Data</strong></p>
+
+    <ul>
+      <li>Click on <strong>Retrieve Data</strong> to download the predictor variables for your chosen location. Save these files to your computer for use in SDSM.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="download-predictand-variables">Download predictand Variables</h2>
+
+<p>Predictand variables play a crucial role in running the Statistical Downscaling Model (SDSM). These variables establish the connection between local-scale observations and large-scale atmospheric data, enabling accurate downscaling for climate analysis and predictions.</p>
+
+<p><a href="/files/Surkhet_sample_Data.xlsx">Download sample rainfall data of surkhet</a></p>
+
+<hr />
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Are you ready to integrate SDSM into your research or planning? Let me know how downscaling can transform your approach to climate impact studies! <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="teaching_courses" /><category term="teaching" /><summary type="html"><![CDATA[1 As greenhouse gas concentrations continue to rise, General Circulation Models (GCMs) predict significant changes in climate on global and regional scales. However, these models leave an important question unanswered: How will climate change impact specific locations? Addressing this uncertainty requires a technique known as downscaling—a process that transforms the broad insights provided by GCMs into actionable, localized data. Are you ready to integrate SDSM into your research or planning? Let me know how downscaling can transform your approach to climate impact studies! &#8617;]]></summary></entry><entry><title type="html">Spatial and Temporal Variations of Surface Air Temperature (1962–2022) across Physiographic Regions in the Koshi Basin, Nepal</title><link href="http://localhost:4000/publication/2024-12-17-Spatial-and-Temporal-Variations-of-Surface-Air-Temperature-(1962%E2%80%932022)-across-Physiographic-Regions-in-the-Koshi-Basin,-Nepal" rel="alternate" type="text/html" title="Spatial and Temporal Variations of Surface Air Temperature (1962–2022) across Physiographic Regions in the Koshi Basin, Nepal" /><published>2024-12-17T00:00:00+00:00</published><updated>2024-12-17T00:00:00+00:00</updated><id>http://localhost:4000/publication/Spatial-and-Temporal-Variations-of-Surface-Air-Temperature-(1962%E2%80%932022)-across-Physiographic-Regions-in-the-Koshi-Basin,-Nepal</id><content type="html" xml:base="http://localhost:4000/publication/2024-12-17-Spatial-and-Temporal-Variations-of-Surface-Air-Temperature-(1962%E2%80%932022)-across-Physiographic-Regions-in-the-Koshi-Basin,-Nepal"><![CDATA[<h2 id="abstract">Abstract</h2>
+
+<p>This study analyzed the seasonal and annual trends of maximum temperature (Tmax), minimum temperature (Tmin), and mean temperature (Tavg) across the physiographic regions (Himalaya, High Mountain, Middle Mountain, Siwalik, and Terai) of the Koshi Basin using observed data from 23 stations between 1962 and 2022. Missing temperature data were filled using the lapse rate method. The Mann-Kendall (M-K) test was employed to assess the consistency of the temperature dataset. The analysis revealed distinct regional and seasonal temperature trends in the Koshi Basin. The seasonal variations were prominent, especially in the Monsoon and Winter. In the Middle Mountain and High Mountain regions, Tmax increased significantly during the Pre-monsoon season, while Tmin decreased substantially during the Monsoon and Winter. Conversely, the Siwalik and Terai regions experienced more pronounced cooling Himalayas, especially during the Monsoon and Winter. Overall, the Himalayas and High Mountain regions exhibited a cooling trend until the late 1990s, followed by a warming trend. The Middle Mountain region demonstrated similar patterns, with a significant temperature increase after the 1990s. The Siwalik and Terai regions experienced a general cooling trend, although the Siwalik region exhibited some fluctuations. The significant regional variations in temperature trends were the key findings. Similarly, the Himalayas and High Mountains showed a cooling-warming shift in the late 1990s. All these findings underscore the importance of considering both regional and seasonal factors when studying temperature trends in the Koshi Basin.</p>
+
+<p>Keywords: Koshi Basin, Temperature trends, Spatial variation, Physiographic regions and Seasonal changes</p>
+
+<ul>
+  <li><a href="https://www.nepjol.info/index.php/JHM/article/view/72654"><strong>Read:</strong> 📖</a></li>
+</ul>]]></content><author><name></name></author><category term="publications" /><category term="publications_journals" /><category term="manuscripts" /><summary type="html"><![CDATA[This study analyzed the seasonal and annual trends of maximum temperature (Tmax), minimum temperature (Tmin), and mean temperature (Tavg) across the physiographic regions (Himalaya, High Mountain, Middle Mountain, Siwalik, and Terai) of the Koshi Basin using observed data from 23 stations between 1962 and 2022...]]></summary></entry></feed>

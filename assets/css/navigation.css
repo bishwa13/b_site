@@ -5,6 +5,7 @@
 
 /* Base Navbar */
 .jk-navbar {
+  max-width: 100%;
   background: #ffffff;
   border-bottom: 1px solid #e0e0e0;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -14,7 +15,7 @@
 }
 
 .jk-navbar-container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
@@ -112,11 +113,12 @@
   border-top-color: #0077cc;
 }
 
-/* --- DESKTOP DROPDOWN --- */
 .jk-dropdown-menu {
   position: absolute;
-  top: 100%; /* Directly below parent */
-  left: -15px; /* Slight offset */
+  top: 100%;
+  right: 0;       /* Fix: align to the right of parent */
+  left: auto;     /* Prevent conflict */
+
   background: #fff;
   border: 1px solid #eee;
   min-width: 200px;
@@ -125,8 +127,8 @@
   margin: 0;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   border-radius: 8px;
-  
-  /* Hiding mechanism */
+
+  /* Hide animation */
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -149,6 +151,7 @@
 }
 
 .jk-dropdown-link {
+  text-align: left;
   display: block;
   padding: 10px 20px;
   color: #444;
@@ -160,6 +163,8 @@
   background: #f5f9ff;
   color: #0077cc;
 }
+
+
 
 /* Show dropdown on hover (Desktop only) */
 @media (min-width: 993px) {

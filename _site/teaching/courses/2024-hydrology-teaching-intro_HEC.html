@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Hydrological Modelling using HEC-HMS Introductory Class | ImBishwa</title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Hydrological Modelling using HEC-HMS Introductory Class | ImBishwa</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Hydrological Modelling using HEC-HMS Introductory Class" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="HEC-HMS consists of several integral components that collectively enable comprehensive modeling and analysis:" />
+<meta property="og:description" content="HEC-HMS consists of several integral components that collectively enable comprehensive modeling and analysis:" />
+<link rel="canonical" href="http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC" />
+<meta property="og:url" content="http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC" />
+<meta property="og:site_name" content="ImBishwa" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-12-03T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Hydrological Modelling using HEC-HMS Introductory Class" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-12-03T00:00:00+00:00","datePublished":"2024-12-03T00:00:00+00:00","description":"HEC-HMS consists of several integral components that collectively enable comprehensive modeling and analysis:","headline":"Hydrological Modelling using HEC-HMS Introductory Class","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC"},"url":"http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <!-- RSS Feed -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="ImBishwa" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0b6cf0">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC">
+  <meta property="og:title" content="Hydrological Modelling using HEC-HMS Introductory Class">
+  <meta property="og:description" content="This is my official personal site, where I put my thoughts, learning and whatever I want. Its not me, its my progress.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC">
+  <meta property="twitter:title" content="Hydrological Modelling using HEC-HMS Introductory Class">
+  <meta property="twitter:description" content="This is my official personal site, where I put my thoughts, learning and whatever I want. Its not me, its my progress.">
+</head>
+<body>
+  <!-- Skip to Content Link for Accessibility -->
+  <!-- _includes/nav.html - Enhanced Navigation with 3-Level Dropdowns -->
+
+
+<nav class="jk-navbar" role="navigation" aria-label="Main navigation">
+  <div class="jk-navbar-container">
+    <a href="/" class="jk-navbar-brand" aria-label="Home">
+      ImBishwa
+    </a>
+
+    <button class="jk-navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-menu">
+      <span class="jk-navbar-toggle-bar"></span>
+      <span class="jk-navbar-toggle-bar"></span>
+      <span class="jk-navbar-toggle-bar"></span>
+    </button>
+
+    <ul class="jk-navbar-menu" id="navbar-menu">
+      
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/study-abroad/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Study Abroad
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/study-abroad/services/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Services
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/study-abroad/guides/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Application Guides
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/study-abroad/scholarships/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Scholarships
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/study-abroad/packages/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Packages & Fees
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/publications/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Publications
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/publications/journals/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Journal Articles
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/publications/conferences/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Conference Papers
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/publications/reports/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Reports & Policy Briefs
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/publications/books/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Books & Chapters
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/talks/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Talks
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/talks/workshops/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Workshops
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/talks/lectures/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Guest Lectures
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/talks/media/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Media & Podcasts
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/teaching/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Teaching
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/teaching/courses/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Courses
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/teaching/syllabi/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Syllabi
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/teaching/supervision/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Supervision (Masters/PhD)
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/portfolio/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Portfolio
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/portfolio/business/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Business Development
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/portfolio/environment/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Environment Solutions
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/portfolio/consulting/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Consulting Projects
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/portfolio/writing/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Creative Writing
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/blog/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Blog Posts
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/blog/study-abroad/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Abroad Studies
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/blog/career/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Career & Coaching
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/blog/research/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Education & Research
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/blog/sustainability/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Sustainable Development
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li class="jk-navbar-item ">
+          <a href="/cv/" 
+             class="jk-navbar-link"
+             >
+            CV
+            
+          </a>
+          
+          
+        </li>
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/projects/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Projects
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/projects/active/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Active Projects
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/projects/completed/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Completed Projects
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/projects/funded/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Funded Research
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+    </ul>
+  </div>
+  
+  <!-- Mobile overlay -->
+  <div class="jk-navbar-overlay" aria-hidden="true"></div>
+</nav>
+  
+  <!-- Main Content -->
+  <article class="jk-post">
+  <div class="jk-post-container">
+    <!-- Post Header -->
+    <header class="jk-post-header">
+      
+        <div class="jk-post-categories">
+          
+            <a href="/blog/teaching_courses/" class="jk-post-category">
+              teaching_courses
+            </a>
+          
+            <a href="/blog/teaching/" class="jk-post-category">
+              teaching
+            </a>
+          
+        </div>
+      
+
+      <h1 class="jk-post-title">Hydrological Modelling using HEC-HMS Introductory Class</h1>
+      
+      
+        <p class="jk-post-excerpt">HEC-HMS consists of several integral components that collectively enable comprehensive modeling and analysis:
+
+</p>
+      
+
+      <div class="jk-post-meta">
+        <div class="jk-post-meta-item">
+          <svg class="jk-post-meta-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 2H12V1C12 0.734784 11.8946 0.48043 11.7071 0.292893C11.5196 0.105357 11.2652 0 11 0C10.7348 0 10.4804 0.105357 10.2929 0.292893C10.1054 0.48043 10 0.734784 10 1V2H6V1C6 0.734784 5.89464 0.48043 5.70711 0.292893C5.51957 0.105357 5.26522 0 5 0C4.73478 0 4.48043 0.105357 4.29289 0.292893C4.10536 0.48043 4 0.734784 4 1V2H3C2.20435 2 1.44129 2.31607 0.87868 2.87868C0.316071 3.44129 0 4.20435 0 5V13C0 13.7956 0.316071 14.5587 0.87868 15.1213C1.44129 15.6839 2.20435 16 3 16H13C13.7956 16 14.5587 15.6839 15.1213 15.1213C15.6839 14.5587 16 13.7956 16 13V5C16 4.20435 15.6839 3.44129 15.1213 2.87868C14.5587 2.31607 13.7956 2 13 2ZM14 13C14 13.2652 13.8946 13.5196 13.7071 13.7071C13.5196 13.8946 13.2652 14 13 14H3C2.73478 14 2.48043 13.8946 2.29289 13.7071C2.10536 13.5196 2 13.2652 2 13V8H14V13ZM14 6H2V5C2 4.73478 2.10536 4.48043 2.29289 4.29289C2.48043 4.10536 2.73478 4 3 4H4V5C4 5.26522 4.10536 5.51957 4.29289 5.70711C4.48043 5.89464 4.73478 6 5 6C5.26522 6 5.51957 5.89464 5.70711 5.70711C5.89464 5.51957 6 5.26522 6 5V4H10V5C10 5.26522 10.1054 5.51957 10.2929 5.70711C10.4804 5.89464 10.7348 6 11 6C11.2652 6 11.5196 5.89464 11.7071 5.70711C11.8946 5.51957 12 5.26522 12 5V4H13C13.2652 4 13.5196 4.10536 13.7071 4.29289C13.8946 4.48043 14 4.73478 14 5V6Z" fill="currentColor"/>
+          </svg>
+          <time datetime="2024-12-03T00:00:00+00:00">
+            December 03, 2024
+          </time>
+        </div>
+
+        
+
+        
+      </div>
+
+      
+        <div class="jk-post-tags">
+          
+        </div>
+      
+    </header>
+
+    <!-- Featured Image -->
+    
+
+    <!-- Post Content -->
+    <div class="jk-post-body">
+      <p>HEC-HMS consists of several integral components that collectively enable comprehensive modeling and analysis:</p>
+
+<ul>
+  <li><strong>Basin Model Manager</strong> Manages the physical representation of the watershed, including sub-basins, river reaches, and reservoirs, to define the spatial structure of the system.</li>
+  <li><strong>Meteorological Model Manager</strong> Facilitates the input of meteorological data, such as rainfall or temperature, for simulating weather events affecting the hydrological processes.</li>
+  <li><strong>Control Specification Manager</strong> Sets the simulation parameters, including the start and end times, time intervals, and other temporal controls for running the model.</li>
+  <li><strong>Time Series Data Manager</strong> Handles temporal data inputs such as rainfall, streamflow, or evaporation, which are critical for dynamic simulations.</li>
+  <li><strong>Paired Data Manager</strong> Stores and manages relationships between two variables, such as elevation vs. storage or discharge vs. stage, which are used in simulations.</li>
+  <li><strong>Grid Data Manager</strong> Supports the management of spatially distributed data such as precipitation grids, allowing for more detailed spatial modeling.</li>
+  <li><strong>Terrain Data Manager</strong> Utilizes terrain data (e.g., DEMs - Digital Elevation Models) to derive watershed features such as flow paths, slopes, and boundaries.</li>
+</ul>
+
+<h3 id="basin-model-manager"><strong>Basin Model Manager</strong></h3>
+
+<p><strong>Basin Model Manager</strong> is a core component of HEC-HMS that deals with the physical representation of the watershed or catchment. It provides tools to define and configure the elements of a basin, including sub-basins, junctions, reaches, reservoirs, and sinks. These elements are interconnected to model the movement of water through the system, simulating how precipitation is transformed into runoff and routed through the network.</p>
+
+<h3 id="key-features-of-the-basin-model-manager">Key Features of the Basin Model Manager</h3>
+
+<ol>
+  <li>
+    <p><strong>Sub-basins</strong>:<br />
+ Represent smaller hydrological units within the larger basin. These are the primary areas where rainfall is transformed into runoff, based on specified hydrological parameters.</p>
+  </li>
+  <li>
+    <p><strong>Junctions</strong>:<br />
+ Points where two or more flow paths converge, allowing for the combination and routing of flow from different sub-basins or upstream elements.</p>
+  </li>
+  <li>
+    <p><strong>Reaches</strong>:<br />
+ Represent sections of rivers or streams where water is routed downstream, accounting for channel properties and hydraulic behavior.</p>
+  </li>
+  <li>
+    <p><strong>Sinks</strong>:<br />
+ Terminal points in the basin where water exits the system, such as lakes or groundwater recharge zones.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h3 id="configurable-parameters-in-basin-model-manager">Configurable Parameters in Basin Model Manager</h3>
+
+<p>The Basin Model Manager supports various methods to simulate different hydrological processes, each of which requires specific parameters to be configured:</p>
+
+<ul>
+  <li>
+    <p><strong>Discretization Method</strong>:<br />
+  Defines how the basin is subdivided into smaller computational units for more detailed and accurate simulations.</p>
+  </li>
+  <li>
+    <p><strong>Canopy Method</strong>:<br />
+  Models the interception and storage of rainfall by vegetation canopies, impacting the water available for runoff.</p>
+  </li>
+  <li>
+    <p><strong>Snow Method</strong>:<br />
+  Accounts for snow accumulation and melting, critical in basins with significant snowfall.</p>
+  </li>
+  <li>
+    <p><strong>Surface Method</strong>:<br />
+  Simulates the surface runoff process, including overland flow and shallow subsurface flow dynamics.</p>
+  </li>
+  <li>
+    <p><strong>Loss Method</strong>:<br />
+  Represents the portion of rainfall that is lost to infiltration, evaporation, or other processes before contributing to runoff. Common loss methods include:</p>
+
+    <ul>
+      <li>SCS Curve Number</li>
+      <li>Initial and Constant Rate</li>
+      <li>Green-Ampt Infiltration</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Transform Method</strong>:<br />
+  Converts excess precipitation (after losses) into direct runoff. This is typically achieved using methods such as:</p>
+
+    <ul>
+      <li>SCS Unit Hydrograph</li>
+      <li>Clark Unit Hydrograph</li>
+      <li>ModClark Method</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Base Flow Method</strong>:<br />
+  Models the subsurface contribution to streamflow, accounting for slower, sustained flow from groundwater. Methods include:</p>
+
+    <ul>
+      <li>Linear Reservoir</li>
+      <li>Exponential Decay</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="importance-of-basin-model-manager">Importance of Basin Model Manager</h3>
+
+<p>The <strong>Basin Model Manager</strong> is integral to the simulation process as it allows users to construct a detailed and realistic representation of the hydrological system. By configuring these parameters, users can model a wide range of scenarios, from natural flood events to the impact of land-use changes, providing critical insights for effective water resource management and planning.</p>
+
+<h3 id="meteorological-model-manager">Meteorological Model Manager</h3>
+
+<p>The <strong>Meteorological Model Manager</strong> is a vital component of HEC-HMS designed to integrate and manage meteorological data required for hydrological simulations. This module facilitates the input of weather-related data, such as rainfall, temperature, and evapotranspiration, which are essential for modeling and analyzing weather events’ impact on hydrological processes.</p>
+
+<h3 id="key-features-of-meteorological-model-manager">Key Features of Meteorological Model Manager</h3>
+
+<ol>
+  <li>
+    <p><strong>Input Flexibility</strong>:<br />
+ The manager supports various types of meteorological data input, allowing users to customize the model based on available data and the specific needs of the project.</p>
+  </li>
+  <li>
+    <p><strong>Data Sources</strong>:</p>
+
+    <ul>
+      <li><strong>Point Data</strong>: Single-location measurements, such as rain gauges and weather stations.</li>
+      <li><strong>Gridded Data</strong>: Distributed datasets from remote sensing or numerical weather models, providing spatially varied meteorological information.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Temporal Resolution</strong>:<br />
+ Supports various time intervals, from sub-hourly to daily or longer periods, depending on the type of simulation and the meteorological data available.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h3 id="supported-meteorological-models">Supported Meteorological Models</h3>
+
+<p>The Meteorological Model Manager provides several pre-configured models to suit different simulation scenarios:</p>
+
+<ul>
+  <li>
+    <p><strong>Precipitation-Only Model</strong>:</p>
+
+    <ul>
+      <li>Simplifies analysis by considering only rainfall events.</li>
+      <li>Useful for scenarios where rainfall is the dominant meteorological factor influencing hydrology.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Evapotranspiration Models</strong>:</p>
+
+    <ul>
+      <li>Includes methods to compute potential and actual evapotranspiration.</li>
+      <li>Supports standard methods like Priestly-Taylor, Penman-Monteith, or Hargreaves-Samani equations.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Temperature Index Snowmelt Model</strong>:</p>
+
+    <ul>
+      <li>Used in basins where snowmelt significantly affects runoff.</li>
+      <li>Simulates snow accumulation and melt processes based on temperature thresholds.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Gridded Meteorological Data Models</strong>:</p>
+
+    <ul>
+      <li>Allows spatially distributed meteorological data to be used for more detailed and regionally accurate simulations.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Frequency-Based Storm Models</strong>:</p>
+
+    <ul>
+      <li>Simulates design storms based on specific return periods or storm intensity-duration-frequency curves.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="components-of-meteorological-model-manager">Components of Meteorological Model Manager</h3>
+
+<ol>
+  <li>
+    <p><strong>Precipitation Input</strong>:</p>
+
+    <ul>
+      <li>Inputs rainfall data in various formats, such as time series, frequency-based storm data, or gridded datasets.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Temperature Input</strong>:</p>
+
+    <ul>
+      <li>Provides temperature data for snowmelt models and other temperature-sensitive hydrological processes.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Evapotranspiration Input</strong>:</p>
+
+    <ul>
+      <li>Simulates water loss due to evaporation and plant transpiration.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Meteorological Grid Input</strong>:</p>
+
+    <ul>
+      <li>Enables users to input and process spatially distributed datasets for precipitation or temperature, often derived from satellite or model data.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h3 id="importance-of-meteorological-model-manager">Importance of Meteorological Model Manager</h3>
+
+<p>The <strong>Meteorological Model Manager</strong> plays a critical role in hydrological modeling, enabling users to simulate the impact of various meteorological events on a watershed. By providing flexible options for data input and advanced models for processing, it ensures accurate representation of weather-driven hydrological phenomena. This capability is particularly valuable for:</p>
+
+<ul>
+  <li>Flood forecasting and management.</li>
+  <li>Design and analysis of water resource systems.</li>
+  <li>Understanding the impact of extreme weather events under changing climatic conditions.</li>
+</ul>
+
+<h3 id="control-specification-manager">Control Specification Manager</h3>
+
+<p>The <strong>Control Specification Manager</strong> is an essential part of the HEC-HMS (Hydrologic Engineering Center’s Hydrologic Modeling System) that allows users to set and manage the simulation parameters that control how the model is executed. This component ensures that all aspects of the simulation, such as timing, intervals, and duration, are correctly defined before running the model.</p>
+
+<h3 id="key-features-and-functionality">Key Features and Functionality</h3>
+
+<ol>
+  <li>
+    <p><strong>Time Control Settings</strong>:<br />
+ The Control Specification Manager lets users define the simulation start and end times, which are essential for controlling the time span of the hydrological model run. These settings ensure that the model simulates the hydrological behavior within a specific time frame, either for historical analysis or future projections.</p>
+  </li>
+  <li>
+    <p><strong>Time Step and Interval Definition</strong>:</p>
+
+    <ul>
+      <li>The manager allows users to define time intervals (or time steps) at which the model will update the state of the system.</li>
+      <li>The user can choose the temporal resolution for data inputs and outputs, such as hourly, daily, or sub-hourly intervals. This flexibility allows the model to handle various types of data and scenarios.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Temporal Resolution</strong>:</p>
+
+    <ul>
+      <li><strong>Fixed time step</strong>: Allows consistent intervals throughout the simulation.</li>
+      <li><strong>Variable time step</strong>: Adjusts the time step dynamically based on simulation needs or input data characteristics.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Event and Time-based Control</strong>:<br />
+ Users can specify the type of simulation to run, whether it’s for a single event (e.g., a flood event) or for long-term hydrological analysis (e.g., monthly or annual simulations). This is useful for studying both short-term events and long-term trends.</p>
+  </li>
+  <li>
+    <p><strong>Hydrological Model Integration</strong>:<br />
+ This manager ensures that the time control settings align with the other components of the HEC-HMS model, like the meteorological and basin models, ensuring synchronized execution and accurate simulation results.</p>
+  </li>
+</ol>
+
+<h3 id="example-use-case">Example Use Case</h3>
+
+<ul>
+  <li><strong>Flood Event Simulation</strong>:<br />
+  A flood simulation for a catchment might require specifying a short simulation period (e.g., 24 hours) with hourly time steps to closely track rainfall and runoff events. On the other hand, for monthly streamflow analysis, the time step could be set to a larger interval (e.g., monthly).</li>
+</ul>
+
+<hr />
+
+<h3 id="time-series-data-manager">Time Series Data Manager</h3>
+
+<p>The <strong>Time Series Data Manager</strong> is a critical component for handling dynamic, temporal input data in HEC-HMS. This manager allows users to manage and process the time series data essential for modeling hydrological events, such as rainfall, streamflow, evaporation, and other meteorological or hydrological variables. Since HEC-HMS uses temporal data to drive the hydrological model, this component is vital for accurate, dynamic simulations.</p>
+
+<h3 id="key-features-and-functionality-of-time-series-data-manager">Key Features and Functionality of Time Series Data Manager</h3>
+
+<ol>
+  <li>
+    <p><strong>Handling Time-Based Data</strong>:<br />
+ The Time Series Data Manager enables users to input and manage various types of time series data:</p>
+
+    <ul>
+      <li><strong>Precipitation Data</strong>: Rainfall data over time is often the most crucial input for hydrological modeling, driving runoff generation.</li>
+      <li><strong>Streamflow Data</strong>: Discharge data at specific intervals allows for streamflow routing and simulating the movement of water through the watershed.</li>
+      <li><strong>Evapotranspiration Data</strong>: Data on evaporation and transpiration is important for simulating the loss of water from the system.</li>
+      <li><strong>Temperature Data</strong>: Temperature data is necessary for modeling snowmelt or evapotranspiration.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Data Import and Management</strong>:<br />
+ The manager supports importing time series data from various sources such as:</p>
+
+    <ul>
+      <li><strong>CSV/Excel Files</strong>: Standard formats for storing time series data.</li>
+      <li><strong>Observed Data</strong>: Real-world measurements from stations or remote sensing data.</li>
+      <li><strong>Synthetic Data</strong>: Generated or assumed data based on known climatic conditions or statistical models.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Data Storage and Retrieval</strong>:</p>
+
+    <ul>
+      <li>The manager allows users to organize time series data by categorizing it based on station names, variable types, and time intervals.</li>
+      <li>Users can store and retrieve large datasets efficiently, ensuring that all necessary inputs are available for the model simulation.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Data Interpolation and Transformation</strong>:</p>
+
+    <ul>
+      <li><strong>Interpolation</strong>: The manager offers tools to interpolate missing or irregular data points (e.g., linear interpolation, spline interpolation), ensuring a continuous data set for simulation.</li>
+      <li><strong>Aggregation</strong>: In cases where data is available at different intervals, the manager can aggregate or resample data (e.g., converting daily data into hourly data).</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Temporal Data Integration</strong>:<br />
+ The Time Series Data Manager integrates temporal data with other HEC-HMS components, ensuring that it’s used correctly in the simulation. For example, the manager can link precipitation data to the <strong>Meteorological Model Manager</strong> and streamflow data to the <strong>Basin Model Manager</strong>.</p>
+  </li>
+</ol>
+
+<h4 id="example-use-case-of-time-series-data-manager">Example Use Case of Time Series Data Manager</h4>
+
+<ul>
+  <li><strong>Rainfall Data Integration</strong>:<br />
+  For simulating a flood event, the user would input hourly rainfall data over several days, which will be used by the model to calculate runoff using a loss method (e.g., SCS curve number). The Time Series Data Manager will ensure that the data is correctly formatted and synchronized with other model components.</li>
+</ul>
+
+<hr />
+
+<h3 id="paired-data-manager">Paired Data Manager</h3>
+
+<p>The <strong>Paired Data Manager</strong> in HEC-HMS is responsible for managing relationships between two variables that are used in simulations. This manager allows users to store and organize paired data, ensuring that the relationship between variables, such as <strong>elevation vs. storage</strong> or <strong>discharge vs. stage</strong>, can be effectively incorporated into the hydrological model. The Paired Data Manager is particularly important when dealing with observational data that describes how two variables interact across a watershed or river system.</p>
+
+<h3 id="key-features-and-functionality-of-paired-data-manager">Key Features and Functionality of Paired Data Manager</h3>
+
+<ol>
+  <li>
+    <p><strong>Storage of Paired Variables</strong>:</p>
+
+    <ul>
+      <li>The Paired Data Manager stores data that consists of two related variables. For example:
+        <ul>
+          <li><strong>Elevation vs. Storage</strong>: Storing how storage capacity in reservoirs or ponds changes with elevation.</li>
+          <li><strong>Discharge vs. Stage</strong>: Storing the relationship between river stage (height) and discharge (flow), which is crucial for flood modeling.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Data Structure</strong>:</p>
+
+    <ul>
+      <li>Paired data is typically stored in a tabular format, where each row represents an observation at a specific time or location. This data is then used to model relationships during simulations, making it possible to translate observed or derived relationships into model inputs.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Data Interpolation</strong>:</p>
+
+    <ul>
+      <li>The manager supports the interpolation of data points to estimate values between known observations. For example, if stage-discharge data is available for certain river levels, interpolation can help estimate values for missing stages.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Integration with Other Components</strong>:</p>
+
+    <ul>
+      <li>The Paired Data Manager works in conjunction with other HEC-HMS components, such as the Basin Model Manager and Time Series Data Manager, to ensure that paired data is incorporated correctly into the hydrological processes.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="example-use-case-of-paired-data-manager">Example Use Case of Paired Data Manager</h3>
+
+<ul>
+  <li><strong>Discharge-Stage Relationship</strong>:<br />
+  The manager might be used to store a river’s stage-discharge curve, which allows the model to calculate the river’s flow at any given stage during the simulation. This relationship helps simulate river flow and is vital for flood forecasting and floodplain management.</li>
+</ul>
+
+<hr />
+
+<h3 id="grid-data-manager">Grid Data Manager</h3>
+
+<p>The <strong>Grid Data Manager</strong> in HEC-HMS is responsible for managing spatially distributed data, particularly data that is represented on a grid or raster format, such as <strong>precipitation grids</strong>. This manager allows users to incorporate spatial variability into the model, enabling more detailed and accurate modeling of hydrological processes across a watershed or catchment area.</p>
+
+<h3 id="key-features-and-functionality-of-grid-data-manager">Key Features and Functionality of Grid Data Manager</h3>
+
+<ol>
+  <li>
+    <p><strong>Spatial Data Management</strong>:<br />
+ The Grid Data Manager stores and processes spatially distributed data, such as rainfall, temperature, and soil moisture, in the form of grids. These grids divide the basin or catchment area into a uniform spatial resolution, allowing for more precise simulation of hydrological processes across the landscape.</p>
+  </li>
+  <li>
+    <p><strong>Precipitation Grids</strong>:<br />
+ The manager can handle gridded precipitation data, where precipitation is distributed spatially across the watershed. This data can be used for simulating rainfall-runoff processes in areas with variable precipitation patterns.</p>
+  </li>
+  <li>
+    <p><strong>Interpolation of Spatial Data</strong>:</p>
+
+    <ul>
+      <li>The Grid Data Manager allows interpolation of spatially distributed data to estimate values in areas where measurements are not available. For instance, if precipitation data is available for a few stations, the manager can interpolate this data across the entire watershed.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Integration with Hydrological Models</strong>:<br />
+ Gridded data, such as rainfall grids, are integrated into the hydrological model. This allows for spatially explicit modeling of surface runoff, infiltration, and other hydrological processes, ensuring that the model reflects the variability in spatial data.</p>
+  </li>
+</ol>
+
+<h3 id="example-use-case-grid-data-manager">Example Use Case Grid Data Manager</h3>
+
+<ul>
+  <li><strong>Gridded Precipitation Data</strong>:<br />
+  In a large watershed, the manager can be used to input high-resolution precipitation grids, which account for spatial variability in rainfall. These grids are then used to calculate runoff across different parts of the basin, leading to more accurate flood forecasts.</li>
+</ul>
+
+<hr />
+
+<h3 id="terrain-data-manager">Terrain Data Manager</h3>
+
+<p>The <strong>Terrain Data Manager</strong> in HEC-HMS is responsible for utilizing terrain data, such as <strong>Digital Elevation Models (DEMs)</strong>, to derive essential features of the watershed. These features include <strong>flow paths</strong>, <strong>slopes</strong>, <strong>watershed boundaries</strong>, and <strong>drainage networks</strong>. Terrain data is fundamental for defining the physical characteristics of the watershed that influence runoff, streamflow, and other hydrological processes.</p>
+
+<h3 id="key-features-and-functionality-of-terrain-data-manager">Key Features and Functionality of Terrain Data Manager</h3>
+
+<ol>
+  <li>
+    <p><strong>Digital Elevation Models (DEMs)</strong>:</p>
+
+    <ul>
+      <li>The Terrain Data Manager uses DEMs to represent the elevation of the watershed surface. DEMs are typically raster-based data sets where each pixel value represents elevation at that location. These models are critical for deriving flow paths and understanding how water moves across the landscape.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Watershed Delineation</strong>:</p>
+
+    <ul>
+      <li>The manager can identify watershed boundaries based on the terrain data. This is essential for determining the area that contributes to runoff and streamflow for a given outlet, such as a river or a reservoir.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Flow Path Derivation</strong>:</p>
+
+    <ul>
+      <li>Using DEMs, the Terrain Data Manager can determine the flow direction and flow accumulation, identifying how water will travel across the landscape. This helps define drainage networks, areas of concentrated flow, and water storage areas in the basin.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Slope Calculation</strong>:</p>
+
+    <ul>
+      <li>Slope is an important factor in hydrological modeling as it influences runoff velocity and infiltration rates. The Terrain Data Manager can calculate slope from DEMs, which is used to estimate runoff and predict flooding.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Integration with Other Components</strong>:</p>
+
+    <ul>
+      <li>The Terrain Data Manager provides essential spatial data that is integrated into the Basin Model Manager, allowing for accurate representation of the watershed and its characteristics. This integration ensures that the terrain data is properly utilized in the hydrological simulation.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="example-use-case-of-terrain-data-manager">Example Use Case of Terrain Data Manager</h3>
+
+<ul>
+  <li><strong>Flow Path Identification</strong>:<br />
+  The Terrain Data Manager can be used to derive flow paths for a river basin. By analyzing the DEM, the manager can identify the main channel and tributaries, allowing the model to simulate water movement accurately across the landscape.</li>
+</ul>
+
+<hr />
+
+<p>Together, these managers provide critical data management tools in HEC-HMS, enhancing the accuracy and realism of hydrological modeling.</p>
+
+<hr />
+
+<h2 id="hec-hms-work-flow">HEC-HMS work flow</h2>
+
+<p><img src="https://workbishwa.github.io/imBishwa/images/hec_hms_workflow.png" alt="HEC-HMS work flow" /></p>
+
+<hr />
+
+<h2 id="balkhu-basin-project-example">Balkhu Basin project (Example)</h2>
+
+<p>In this example, we will use HEC-HMS to analyze hydrological processes in the Balkhu Basin. The goal is to model runoff, precipitation, and streamflow, and apply methods such as the SCS Curve Number for losses and the SCS Unit Hydrograph for transforming runoff. Additionally, we will incorporate routing and time series data to simulate basin hydrology effectively.<br />
+<strong>Hydrology Practice Example: Balkhu Basin</strong></p>
+
+<h2 id="subbasin-information"><strong>Subbasin Information</strong></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Subbasin</strong></th>
+      <th><strong>Area (km²)</strong></th>
+      <th><strong>Lag Time (min)</strong></th>
+      <th><strong>Loss Method</strong></th>
+      <th><strong>Transform Method</strong></th>
+      <th><strong>Ia</strong></th>
+      <th><strong>CN</strong></th>
+      <th><strong>Impervious</strong></th>
+      <th><strong>Graph Type</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S1</td>
+      <td>6.825</td>
+      <td>50</td>
+      <td>SCS Curve Number</td>
+      <td>SCS Unit Hydrograph</td>
+      <td>10</td>
+      <td>80</td>
+      <td>0.0</td>
+      <td>Standard PRF</td>
+    </tr>
+    <tr>
+      <td>S2</td>
+      <td>5.8278</td>
+      <td>52</td>
+      <td>SCS Curve Number</td>
+      <td>SCS Unit Hydrograph</td>
+      <td>10</td>
+      <td>80</td>
+      <td>0.0</td>
+      <td>Standard PRF</td>
+    </tr>
+    <tr>
+      <td>S3</td>
+      <td>6.3668</td>
+      <td>55</td>
+      <td>SCS Curve Number</td>
+      <td>SCS Unit Hydrograph</td>
+      <td>10</td>
+      <td>80</td>
+      <td>0.0</td>
+      <td>Standard PRF</td>
+    </tr>
+    <tr>
+      <td>S4</td>
+      <td>17.603</td>
+      <td>60</td>
+      <td>SCS Curve Number</td>
+      <td>SCS Unit Hydrograph</td>
+      <td>10</td>
+      <td>80</td>
+      <td>0.0</td>
+      <td>Standard PRF</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="routing-information"><strong>Routing Information</strong></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Route</strong></th>
+      <th><strong>Routing Method</strong></th>
+      <th><strong>Initial Type</strong></th>
+      <th><strong>Lag (min)</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R1</td>
+      <td>Lag</td>
+      <td>Discharge = Inflow</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>Lag</td>
+      <td>Discharge = Inflow</td>
+      <td>70</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="specified-hyetograph"><strong>Specified Hyetograph</strong></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Subbasin</strong></th>
+      <th><strong>Gage</strong></th>
+      <th><strong>Total Depth (mm)</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S1</td>
+      <td>Gage 1</td>
+      <td>109.2</td>
+    </tr>
+    <tr>
+      <td>S2</td>
+      <td>Gage 1</td>
+      <td>109.2</td>
+    </tr>
+    <tr>
+      <td>S3</td>
+      <td>Gage 1</td>
+      <td>109.2</td>
+    </tr>
+    <tr>
+      <td>S4</td>
+      <td>Gage 1</td>
+      <td>109.2</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="time-series-data-rainfall-events"><strong>Time Series Data: Rainfall Events</strong></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Time (ddMMMYYYY, HH:mm)</strong></th>
+      <th><strong>Precipitation (mm)</strong></th>
+      <th><strong>Time (ddMMMYYYY, HH:mm)</strong></th>
+      <th><strong>Precipitation (mm)</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>25Sep2011, 14:00</td>
+      <td> </td>
+      <td>26Sep2011, 00:00</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>25Sep2011, 15:00</td>
+      <td>1.8</td>
+      <td>26Sep2011, 01:00</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>25Sep2011, 16:00</td>
+      <td>0.8</td>
+      <td>26Sep2011, 02:00</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>25Sep2011, 17:00</td>
+      <td>0.4</td>
+      <td>26Sep2011, 03:00</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>25Sep2011, 18:00</td>
+      <td>0.9</td>
+      <td>26Sep2011, 04:00</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>25Sep2011, 19:00</td>
+      <td>1.2</td>
+      <td>26Sep2011, 05:00</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>25Sep2011, 20:00</td>
+      <td>2.4</td>
+      <td>26Sep2011, 06:00</td>
+      <td>8.4</td>
+    </tr>
+    <tr>
+      <td>25Sep2011, 21:00</td>
+      <td>2.0</td>
+      <td>26Sep2011, 07:00</td>
+      <td>44.0</td>
+    </tr>
+    <tr>
+      <td>25Sep2011, 22:00</td>
+      <td>1.2</td>
+      <td>26Sep2011, 08:00</td>
+      <td>7.6</td>
+    </tr>
+    <tr>
+      <td>25Sep2011, 23:00</td>
+      <td>0.4</td>
+      <td>26Sep2011, 09:00</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>26Sep2011, 10:00</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>26Sep2011, 11:00</td>
+      <td>6.2</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>26Sep2011, 12:00</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>26Sep2011, 13:00</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>26Sep2011, 14:00</td>
+      <td>0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="notes-for-students"><strong>Notes for Students</strong></h2>
+
+<ol>
+  <li>Subbasins <strong>S1 to S4</strong> have similar hydrological parameters, ensuring easier modeling consistency.</li>
+  <li>Routing methods (R1 and R2) use <strong>Lag Routing</strong>, with an identical lag time of 70 minutes.</li>
+  <li>Specified hyetograph uses <strong>Gage 1</strong> for all subbasins, with a consistent total depth of 109.2 mm.</li>
+  <li>Rainfall events follow a uniform time series format; ensure accurate input for temporal rainfall analysis.</li>
+</ol>
+
+<h2 id="downloads"><strong>Downloads</strong></h2>
+
+<p><a href="/files/clip_balkhu111.tif">Balkhu Terrain File (<em>.tif</em>)📥</a><br />
+<a href="/files/balkhu_coordinate.prj">projection_coordinate📥</a></p>
+
+    </div>
+
+    <!-- Post Footer -->
+    <footer class="jk-post-footer">
+      
+        <div class="jk-post-footer-taxonomy">
+          
+            <div class="jk-post-footer-section">
+              <h3 class="jk-post-footer-title">Tags</h3>
+              <div class="jk-post-footer-tags">
+                
+              </div>
+            </div>
+          
+
+          
+            <div class="jk-post-footer-section">
+              <h3 class="jk-post-footer-title">Categories</h3>
+              <div class="jk-post-footer-categories">
+                
+                  <a href="/blog/teaching_courses/" class="jk-post-footer-category">
+                    teaching_courses
+                  </a>
+                
+                  <a href="/blog/teaching/" class="jk-post-footer-category">
+                    teaching
+                  </a>
+                
+              </div>
+            </div>
+          
+        </div>
+      
+
+      <!-- Share Buttons -->
+      <div class="jk-post-share">
+        <h3 class="jk-post-share-title">Share this post</h3>
+        <div class="jk-post-share-buttons">
+          <a href="https://twitter.com/intent/tweet?text=Hydrological+Modelling+using+HEC-HMS+Introductory+Class&url=http%3A%2F%2Flocalhost%3A4000%2Fteaching%2Fcourses%2F2024-hydrology-teaching-intro_HEC" 
+             class="jk-post-share-button jk-post-share-twitter" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="Share on Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fteaching%2Fcourses%2F2024-hydrology-teaching-intro_HEC" 
+             class="jk-post-share-button jk-post-share-facebook" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="Share on Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fteaching%2Fcourses%2F2024-hydrology-teaching-intro_HEC&title=Hydrological+Modelling+using+HEC-HMS+Introductory+Class" 
+             class="jk-post-share-button jk-post-share-linkedin" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="Share on LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <button class="jk-post-share-button jk-post-share-copy" 
+                  onclick="copyToClipboard('http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC')"
+                  aria-label="Copy link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </div>
+</article>
+
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+    const button = event.target.closest('.jk-post-share-copy');
+    const originalHTML = button.innerHTML;
+    button.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>';
+    button.style.background = 'var(--jk-success, #10b981)';
+    setTimeout(function() {
+      button.innerHTML = originalHTML;
+      button.style.background = '';
+    }, 2000);
+  });
+}
+</script>
+  
+  <!-- Footer -->
+  <!-- _includes/footer.html - Enhanced Footer -->
+<footer class="jk-footer-simple" role="contentinfo">
+  <div class="jk-container">
+    <p>
+      &copy; 2025-12-12 <strong>ImBishwa</strong>. 
+      All rights reserved.
+    </p>
+    <p>
+      There is no such thing as a free lunch.
+    </p>
+  </div>
+</footer>
+  
+  <!-- JavaScript -->
+  <!-- Load navigation first so `initNavigation` is available to other modules -->
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/header.js" defer></script>
+  <script src="/assets/js/footer.js" defer></script>
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <script src="/assets/js/search.js"></script>
+  
+  <!-- Google Analytics (if configured) -->
+  
+</body>
+</html>

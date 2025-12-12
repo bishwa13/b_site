@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Hydraulic Modelling using HEC-RAS Introductory Class | ImBishwa</title>
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Hydraulic Modelling using HEC-RAS Introductory Class | ImBishwa</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Hydraulic Modelling using HEC-RAS Introductory Class" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="HEC-RAS (Hydrologic Engineering Center’s River Analysis System) is a powerful modeling software developed by the U.S. Army Corps of Engineers. It is widely used for simulating water flow in natural and constructed channels, performing floodplain mapping, and analyzing hydraulic structures. With its capabilities to model steady and unsteady flow, sediment transport, and water quality, HEC-RAS supports comprehensive river system analysis and decision-making for flood risk management, infrastructure design, and environmental conservation." />
+<meta property="og:description" content="HEC-RAS (Hydrologic Engineering Center’s River Analysis System) is a powerful modeling software developed by the U.S. Army Corps of Engineers. It is widely used for simulating water flow in natural and constructed channels, performing floodplain mapping, and analyzing hydraulic structures. With its capabilities to model steady and unsteady flow, sediment transport, and water quality, HEC-RAS supports comprehensive river system analysis and decision-making for flood risk management, infrastructure design, and environmental conservation." />
+<link rel="canonical" href="http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC-RAS" />
+<meta property="og:url" content="http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC-RAS" />
+<meta property="og:site_name" content="ImBishwa" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-12-09T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Hydraulic Modelling using HEC-RAS Introductory Class" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-12-09T00:00:00+00:00","datePublished":"2024-12-09T00:00:00+00:00","description":"HEC-RAS (Hydrologic Engineering Center’s River Analysis System) is a powerful modeling software developed by the U.S. Army Corps of Engineers. It is widely used for simulating water flow in natural and constructed channels, performing floodplain mapping, and analyzing hydraulic structures. With its capabilities to model steady and unsteady flow, sediment transport, and water quality, HEC-RAS supports comprehensive river system analysis and decision-making for flood risk management, infrastructure design, and environmental conservation.","headline":"Hydraulic Modelling using HEC-RAS Introductory Class","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC-RAS"},"url":"http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC-RAS"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <!-- RSS Feed -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="ImBishwa" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0b6cf0">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC-RAS">
+  <meta property="og:title" content="Hydraulic Modelling using HEC-RAS Introductory Class">
+  <meta property="og:description" content="This is my official personal site, where I put my thoughts, learning and whatever I want. Its not me, its my progress.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC-RAS">
+  <meta property="twitter:title" content="Hydraulic Modelling using HEC-RAS Introductory Class">
+  <meta property="twitter:description" content="This is my official personal site, where I put my thoughts, learning and whatever I want. Its not me, its my progress.">
+</head>
+<body>
+  <!-- Skip to Content Link for Accessibility -->
+  <!-- _includes/nav.html - Enhanced Navigation with 3-Level Dropdowns -->
+
+
+<nav class="jk-navbar" role="navigation" aria-label="Main navigation">
+  <div class="jk-navbar-container">
+    <a href="/" class="jk-navbar-brand" aria-label="Home">
+      ImBishwa
+    </a>
+
+    <button class="jk-navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-menu">
+      <span class="jk-navbar-toggle-bar"></span>
+      <span class="jk-navbar-toggle-bar"></span>
+      <span class="jk-navbar-toggle-bar"></span>
+    </button>
+
+    <ul class="jk-navbar-menu" id="navbar-menu">
+      
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/study-abroad/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Study Abroad
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/study-abroad/services/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Services
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/study-abroad/guides/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Application Guides
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/study-abroad/scholarships/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Scholarships
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/study-abroad/packages/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Packages & Fees
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/publications/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Publications
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/publications/journals/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Journal Articles
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/publications/conferences/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Conference Papers
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/publications/reports/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Reports & Policy Briefs
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/publications/books/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Books & Chapters
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/talks/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Talks
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/talks/workshops/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Workshops
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/talks/lectures/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Guest Lectures
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/talks/media/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Media & Podcasts
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/teaching/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Teaching
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/teaching/courses/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Courses
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/teaching/syllabi/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Syllabi
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/teaching/supervision/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Supervision (Masters/PhD)
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/portfolio/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Portfolio
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/portfolio/business/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Business Development
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/portfolio/environment/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Environment Solutions
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/portfolio/consulting/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Consulting Projects
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/portfolio/writing/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Creative Writing
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/blog/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Blog Posts
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/blog/study-abroad/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Abroad Studies
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/blog/career/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Career & Coaching
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/blog/research/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Education & Research
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/blog/sustainability/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Sustainable Development
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li class="jk-navbar-item ">
+          <a href="/cv/" 
+             class="jk-navbar-link"
+             >
+            CV
+            
+          </a>
+          
+          
+        </li>
+      
+        <li class="jk-navbar-item has-dropdown">
+          <a href="/projects/" 
+             class="jk-navbar-link"
+             
+               aria-haspopup="true" 
+               aria-expanded="false"
+               data-dropdown-toggle
+             >
+            Projects
+            
+              <span class="jk-navbar-arrow" aria-hidden="true">▾</span>
+            
+          </a>
+          
+          
+            <ul class="jk-dropdown-menu" role="menu">
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/projects/active/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Active Projects
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/projects/completed/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Completed Projects
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+                <li class="jk-dropdown-item " role="none">
+                  <a href="/projects/funded/" 
+                     class="jk-dropdown-link"
+                     role="menuitem"
+                     >
+                    Funded Research
+                    
+                  </a>
+                  
+                  
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+    </ul>
+  </div>
+  
+  <!-- Mobile overlay -->
+  <div class="jk-navbar-overlay" aria-hidden="true"></div>
+</nav>
+  
+  <!-- Main Content -->
+  <article class="jk-post">
+  <div class="jk-post-container">
+    <!-- Post Header -->
+    <header class="jk-post-header">
+      
+        <div class="jk-post-categories">
+          
+            <a href="/blog/teaching_courses/" class="jk-post-category">
+              teaching_courses
+            </a>
+          
+            <a href="/blog/teaching/" class="jk-post-category">
+              teaching
+            </a>
+          
+        </div>
+      
+
+      <h1 class="jk-post-title">Hydraulic Modelling using HEC-RAS Introductory Class</h1>
+      
+      
+        <p class="jk-post-excerpt">HEC-RAS (Hydrologic Engineering Center’s River Analysis System) is a powerful modeling software developed by the U.S. Army Corps of Engineers. It is widely used for simulating water flow in natural...</p>
+      
+
+      <div class="jk-post-meta">
+        <div class="jk-post-meta-item">
+          <svg class="jk-post-meta-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 2H12V1C12 0.734784 11.8946 0.48043 11.7071 0.292893C11.5196 0.105357 11.2652 0 11 0C10.7348 0 10.4804 0.105357 10.2929 0.292893C10.1054 0.48043 10 0.734784 10 1V2H6V1C6 0.734784 5.89464 0.48043 5.70711 0.292893C5.51957 0.105357 5.26522 0 5 0C4.73478 0 4.48043 0.105357 4.29289 0.292893C4.10536 0.48043 4 0.734784 4 1V2H3C2.20435 2 1.44129 2.31607 0.87868 2.87868C0.316071 3.44129 0 4.20435 0 5V13C0 13.7956 0.316071 14.5587 0.87868 15.1213C1.44129 15.6839 2.20435 16 3 16H13C13.7956 16 14.5587 15.6839 15.1213 15.1213C15.6839 14.5587 16 13.7956 16 13V5C16 4.20435 15.6839 3.44129 15.1213 2.87868C14.5587 2.31607 13.7956 2 13 2ZM14 13C14 13.2652 13.8946 13.5196 13.7071 13.7071C13.5196 13.8946 13.2652 14 13 14H3C2.73478 14 2.48043 13.8946 2.29289 13.7071C2.10536 13.5196 2 13.2652 2 13V8H14V13ZM14 6H2V5C2 4.73478 2.10536 4.48043 2.29289 4.29289C2.48043 4.10536 2.73478 4 3 4H4V5C4 5.26522 4.10536 5.51957 4.29289 5.70711C4.48043 5.89464 4.73478 6 5 6C5.26522 6 5.51957 5.89464 5.70711 5.70711C5.89464 5.51957 6 5.26522 6 5V4H10V5C10 5.26522 10.1054 5.51957 10.2929 5.70711C10.4804 5.89464 10.7348 6 11 6C11.2652 6 11.5196 5.89464 11.7071 5.70711C11.8946 5.51957 12 5.26522 12 5V4H13C13.2652 4 13.5196 4.10536 13.7071 4.29289C13.8946 4.48043 14 4.73478 14 5V6Z" fill="currentColor"/>
+          </svg>
+          <time datetime="2024-12-09T00:00:00+00:00">
+            December 09, 2024
+          </time>
+        </div>
+
+        
+
+        
+      </div>
+
+      
+        <div class="jk-post-tags">
+          
+        </div>
+      
+    </header>
+
+    <!-- Featured Image -->
+    
+
+    <!-- Post Content -->
+    <div class="jk-post-body">
+      <p>HEC-RAS (Hydrologic Engineering Center’s River Analysis System) is a powerful modeling software developed by the U.S. Army Corps of Engineers. It is widely used for simulating water flow in natural and constructed channels, performing floodplain mapping, and analyzing hydraulic structures. With its capabilities to model steady and unsteady flow, sediment transport, and water quality, HEC-RAS supports comprehensive river system analysis and decision-making for flood risk management, infrastructure design, and environmental conservation.</p>
+
+<h2 id="hydraulic-modeling-with-hec-ras-a-comprehensive-overview">Hydraulic Modeling with HEC-RAS: A Comprehensive Overview</h2>
+
+<p>When embarking on the journey of modeling hydraulic systems using HEC-RAS (Hydrologic Engineering Centers River Analysis System), it’s crucial to understand that the scope of their model must extend beyond the immediate area of interest. Here’s an in-depth look at how to effectively model a river system:</p>
+
+<h3 id="understanding-the-broader-context"><strong>Understanding the Broader Context</strong></h3>
+
+<ul>
+  <li>River Reach Inclusion: To accurately model a hydraulic system, you must include not only the segment under study but also the river reaches both upstream and downstream. This is because hydraulic conditions in these areas directly influence the dynamics within your study area.</li>
+  <li>Water Surface Profiles: HEC-RAS calculates water surface profiles by solving the Energy Equation from one cross-section to the next.</li>
+  <li>Energy Equation: The primary equation used here assumes uniform flow and integrates Manning’s equation for velocity determination.</li>
+</ul>
+
+<h4 id="cross-sectional-analysis"><strong>Cross-Sectional Analysis</strong></h4>
+
+<ul>
+  <li>Orientation and Placement: Cross-sections should be:</li>
+  <li>Perpendicular: Oriented perpendicular to the flow direction, ensuring accurate representation of the channel, overbanks, and flow paths.</li>
+  <li>Frequent Enough: Placed closely enough to capture all significant changes in the floodplain, which includes:</li>
+  <li>Floodplain Width: The broader the floodplain, the more cross-sections might be needed to model it accurately.</li>
+  <li>Roughness of Channel Bed: This affects flow velocity and energy loss, necessitating detailed consideration in each section.</li>
+  <li>Slope: Influences water flow and must be accurately represented.</li>
+  <li>Hydraulic Structures: Additional cross-sections are essential at points where hydraulic structures like bridges, weirs, or dams are present because these structures significantly alter flow characteristics:</li>
+  <li>Conveyance: Proper placement here ensures the model accounts for changes in water conveyance, critical for flood modeling or river restoration projects.</li>
+</ul>
+
+<h4 id="computational-flow"><strong>Computational Flow</strong></h4>
+
+<ul>
+  <li>Directionality: HEC-RAS computations are performed in the positive flow direction, meaning from upstream to downstream. This is not just a computational convention but also mirrors how data should be input into the software:</li>
+  <li>User Input: When defining the river reach, you’ll draw from the upstream end to the downstream end, which aligns with natural water flow.</li>
+  <li>Modeling Capabilities: HEC-RAS is versatile, capable of handling:</li>
+  <li>Simple Systems: Like a single uniform channel.</li>
+  <li>Complex Systems: Including multiple branches, confluences, and varied hydraulic structures.</li>
+</ul>
+
+<h2 id="downloads"><strong>Downloads</strong></h2>
+
+<p><a href="/files/clip_balkhu111.tif">Balkhu Terrain File (<em>.tif</em>)📥</a><br />
+<a href="/files/Balkhu_Boundary.prj">projection for Balkhu(<em>.prj</em>)📥</a></p>
+
+    </div>
+
+    <!-- Post Footer -->
+    <footer class="jk-post-footer">
+      
+        <div class="jk-post-footer-taxonomy">
+          
+            <div class="jk-post-footer-section">
+              <h3 class="jk-post-footer-title">Tags</h3>
+              <div class="jk-post-footer-tags">
+                
+              </div>
+            </div>
+          
+
+          
+            <div class="jk-post-footer-section">
+              <h3 class="jk-post-footer-title">Categories</h3>
+              <div class="jk-post-footer-categories">
+                
+                  <a href="/blog/teaching_courses/" class="jk-post-footer-category">
+                    teaching_courses
+                  </a>
+                
+                  <a href="/blog/teaching/" class="jk-post-footer-category">
+                    teaching
+                  </a>
+                
+              </div>
+            </div>
+          
+        </div>
+      
+
+      <!-- Share Buttons -->
+      <div class="jk-post-share">
+        <h3 class="jk-post-share-title">Share this post</h3>
+        <div class="jk-post-share-buttons">
+          <a href="https://twitter.com/intent/tweet?text=Hydraulic+Modelling+using+HEC-RAS+Introductory+Class&url=http%3A%2F%2Flocalhost%3A4000%2Fteaching%2Fcourses%2F2024-hydrology-teaching-intro_HEC-RAS" 
+             class="jk-post-share-button jk-post-share-twitter" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="Share on Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fteaching%2Fcourses%2F2024-hydrology-teaching-intro_HEC-RAS" 
+             class="jk-post-share-button jk-post-share-facebook" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="Share on Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fteaching%2Fcourses%2F2024-hydrology-teaching-intro_HEC-RAS&title=Hydraulic+Modelling+using+HEC-RAS+Introductory+Class" 
+             class="jk-post-share-button jk-post-share-linkedin" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-label="Share on LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <button class="jk-post-share-button jk-post-share-copy" 
+                  onclick="copyToClipboard('http://localhost:4000/teaching/courses/2024-hydrology-teaching-intro_HEC-RAS')"
+                  aria-label="Copy link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </div>
+</article>
+
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+    const button = event.target.closest('.jk-post-share-copy');
+    const originalHTML = button.innerHTML;
+    button.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>';
+    button.style.background = 'var(--jk-success, #10b981)';
+    setTimeout(function() {
+      button.innerHTML = originalHTML;
+      button.style.background = '';
+    }, 2000);
+  });
+}
+</script>
+  
+  <!-- Footer -->
+  <!-- _includes/footer.html - Enhanced Footer -->
+<footer class="jk-footer-simple" role="contentinfo">
+  <div class="jk-container">
+    <p>
+      &copy; 2025-12-12 <strong>ImBishwa</strong>. 
+      All rights reserved.
+    </p>
+    <p>
+      There is no such thing as a free lunch.
+    </p>
+  </div>
+</footer>
+  
+  <!-- JavaScript -->
+  <!-- Load navigation first so `initNavigation` is available to other modules -->
+  <script src="/assets/js/navigation.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/header.js" defer></script>
+  <script src="/assets/js/footer.js" defer></script>
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <script src="/assets/js/search.js"></script>
+  
+  <!-- Google Analytics (if configured) -->
+  
+</body>
+</html>

@@ -1,26 +1,65 @@
 ---
 layout: page
-title: "Courses"
+title: "Courses Taught & Developed"
 permalink: /teaching/courses/
 ---
 
-<h1>Courses</h1>
-<p>Courses taught and course development.</p>
+<section class="teaching-intro">
+  <h1>📚 Courses Taught </h1>
+  <p>
+    I have taught and developed courses across multiple levels, focusing on 
+    strong fundamentals, applied research, and practical learning.  
+    Below is a curated list of courses I have offered, each designed to create 
+    an engaging and supportive learning environment.
+  </p>
+  <h2>Some of the course list:</h2>
+</section>
 
-{% if site.categories.teaching_courses.size > 0 %}
-<ul class="teaching-list">
-  {% for post in site.categories.teaching_courses %}
-    <li class="teaching-item">
-      <a href="{{ post.url }}" class="teaching-link">
-        <h3>{{ post.title }}</h3>
-        <span class="teaching-date">{{ post.date | date: "%B %d, %Y" }}</span>
-      </a>
-      {% if post.excerpt %}
-        <p class="teaching-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
-{% else %}
-<p>No courses listed yet.</p>
-{% endif %}
+{% assign sorted_courses = site.categories.teaching_courses | sort: "term" | reverse %}
+
+<section class="teaching-courses">
+
+  {% if sorted_courses and sorted_courses.size > 0 %}
+
+    <div class="course-card-container">
+      {% for post in sorted_courses %}
+        <article class="course-card">
+
+          <a class="course-card-link" href="{{ post.url }}" aria-label="Read more about {{ post.title }}">
+
+            <div class="course-card-header">
+              <h2 class="course-title">{{ post.title }}</h2>
+
+              {% if post.course_id %}
+                <span class="course-id">{{ post.course_id }}</span>
+              {% endif %}
+            </div>
+
+            <div class="course-meta">
+              <span class="course-term">
+                {% if post.term %}
+                  {{ post.term }}
+                {% else %}
+                  {{ post.date | date: "%Y" }}
+                {% endif %}
+              </span>
+            </div>
+
+            <p class="course-summary">
+              {% if post.excerpt %}
+                {{ post.excerpt | strip_html | truncatewords: 30 }}
+              {% else %}
+                A brief overview of this course is available on the details page.
+              {% endif %}
+            </p>
+
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+
+  {% else %}
+    <p>No courses are listed yet. More will be added soon.</p>
+  {% endif %}
+
+</section>
